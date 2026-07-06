@@ -4,886 +4,1302 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Global Financial Derivatives Specialist — Certification | RiskMathics</title>
-<meta name="description" content="Global Financial Derivatives Specialist Certification (GFDS). 320 horas, 128 sesiones, 22 módulos, Julio 2026 – Julio 2027, live online. Learn. Apply. Profit. RiskMathics Financial Innovation Institute.">
+<meta name="description" content="Certificación Global en Derivados Financieros. 320 horas, 21 módulos, 128 sesiones. Learn. Apply. Profit. RiskMathics Financial Innovation Institute.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
 <style>
-/* ==========================================================
-   RISKMATHICS - GFDS SUPER LANDING (re-skin manual identidad)
-   Tipografia: Poppins (titulares/CTAs) + Lora (cuerpo/italicas)
-   Paleta 100% del folleto oficial:
-   Navy #1F3152 - Deep #11203E - Ink #0D2151 - Royal #2A5A9B
-   Steel #579ADA - Gold #AF7D1F / #C9992F - Ivory #F8F6EA
-   ========================================================== */
-:root{
-  --navy:#1F3152;
-  --navy-deep:#11203E;
-  --navy-ink:#0D2151;
-  --accent:#2A5A9B;
-  --accent-dark:#1C4287;
-  --accent-glow:#579ADA;
-  --accent-soft:#AEBDD6;
-  --gold:#AF7D1F;
-  --gold-light:#C9992F;
-  --bronze:#85704D;
-  --ivory:#F8F6EA;
-  --white:#FFFFFF;
-  --text-primary:#F8F6EA;
-  --text-secondary:rgba(248,246,234,0.66);
-  --text-faint:rgba(248,246,234,0.42);
-  --surface:rgba(255,255,255,0.035);
-  --surface-strong:rgba(255,255,255,0.07);
-  --line:rgba(255,255,255,0.10);
-  --line-soft:rgba(255,255,255,0.06);
-  --border-subtle:rgba(255,255,255,0.08);
-  --shadow-md:0 8px 32px rgba(4,10,26,0.35);
-  --radius-sm:8px;
-  --radius-md:16px;
-  --radius-lg:24px;
-}
-
-*{margin:0;padding:0;box-sizing:border-box}
-
-html{scroll-behavior:smooth;font-size:16px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-
-body{
-  font-family:'Lora',Georgia,serif;
-  font-size:1rem;
-  line-height:1.72;
-  color:var(--text-primary);
-  background:linear-gradient(135deg,var(--navy-ink) 0%,var(--navy-deep) 48%,var(--navy) 100%) fixed;
-  overflow-x:hidden;
-}
-
-/* --- TIPOGRAFIA --- */
-h1,h2,h3,h4,h5,h6{
-  font-family:'Poppins',sans-serif;
-  font-weight:700;
-  line-height:1.22;
-  color:var(--ivory);
-}
-
-.display-xl{
-  font-size:clamp(2.1rem,4.8vw,3.9rem);
-  font-weight:800;
-  text-transform:uppercase;
-  letter-spacing:0.05em;
-  line-height:1.12;
-}
-
-.display-lg{
-  font-size:clamp(1.7rem,3.4vw,2.6rem);
-  font-weight:700;
-  text-transform:uppercase;
-  letter-spacing:0.06em;
-}
-
-.display-md{
-  font-size:clamp(1.25rem,2.5vw,1.85rem);
-  font-weight:700;
-  text-transform:uppercase;
-  letter-spacing:0.09em;
-  text-align:center;
-  color:var(--ivory);
-}
-
-.section-label{
-  display:block;
-  text-align:center;
-  font-family:'Poppins',sans-serif;
-  font-size:0.72rem;
-  font-weight:600;
-  letter-spacing:0.24em;
-  text-transform:uppercase;
-  color:var(--gold-light);
-}
-
-/* Motivo signature: linea de acento 50x2 centrada */
-.accent-line{
-  width:50px;
-  height:2px;
-  background:var(--gold-light);
-  margin:1.4rem auto 0;
-}
-
-.body-lg{
-  font-size:1.08rem;
-  line-height:1.8;
-}
-
-section p.body-lg{
-  font-style:italic;
-  text-align:center;
-  margin-left:auto;
-  margin-right:auto;
-  color:var(--text-secondary);
-}
-
-/* --- LAYOUT --- */
-.container{max-width:1200px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem)}
-.container-narrow{max-width:860px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem)}
-
-section{padding:clamp(4.5rem,9vw,9rem) 0}
-
-/* --- HEADER FIJO --- */
-.site-header{
-  position:fixed;top:0;left:0;right:0;z-index:1000;
-  padding:0.9rem 0;
-  background:rgba(13,33,81,0.92);
-  backdrop-filter:blur(20px);
-  -webkit-backdrop-filter:blur(20px);
-  border-bottom:1px solid rgba(87,154,218,0.10);
-  transition:padding 0.4s ease;
-}
-
-.header-inner{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:1.5rem;
-  max-width:1200px;
-  margin:0 auto;
-  padding:0 clamp(1.25rem,4vw,3rem);
-}
-
-.header-logo{white-space:nowrap;flex-shrink:0}
-
-/* Nav: aire, gap fijo, rotulos que NUNCA se parten ni se enciman */
-.header-nav{
-  display:flex;
-  align-items:center;
-  gap:1.25rem;
-  flex-wrap:nowrap;
+/* ═══════════════════════════════════════════════
+   DESIGN SYSTEM — RISKMATHICS GFDS LANDING
+   Typography: Poppins (títulos) + Lora (body)
+   Palette: Navy #0A1628, Teal #00BFA6, Gold #D4A84B, 
+            Ivory #F8F6F0, Slate #2C3E50
+   ═══════════════════════════════════════════════ */
+:root {
+  /* ── Brand palette extracted from cover image ── */
+  --navy: #0d1b40;
+  --navy-deep: #040718;
+  --navy-mid: #0f2247;
+  --accent: #579be6;       /* steel-blue accent line */
+  --accent-dark: #3d7ec8;
+  --accent-glow: #6db0f7;
+  --accent-soft: #a0b3d3;  /* "Executive Program" color */
+  --gold: #c8a45a;
+  --gold-light: #dfc07e;
+  --ivory: #F4F5F8;
+  --ivory-warm: #F8F9FB;
+  --slate: #2C3E50;
+  --slate-light: #7386a7;
+  --white: #FFFFFF;
+  --text-primary: #1A2A3A;
+  --text-secondary: #5A6B7D;
+  --border-subtle: rgba(0,0,0,0.06);
+  --shadow-sm: 0 2px 8px rgba(4,7,24,0.06);
+  --shadow-md: 0 8px 32px rgba(4,7,24,0.12);
+  --shadow-lg: 0 16px 64px rgba(4,7,24,0.18);
+  --shadow-glow: 0 0 40px rgba(87,155,230,0.18);
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { 
+  scroll-behavior: smooth; 
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.72;
+  color: var(--text-primary);
+  background: var(--ivory);
+  overflow-x: hidden;
+}
+
+/* ─── TYPOGRAPHY ─── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.display-xl {
+  font-size: clamp(2.8rem, 6vw, 5.2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.display-lg {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 700;
+}
+
+.display-md {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 700;
+}
+
+.section-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.body-lg {
+  font-size: 1.125rem;
+  line-height: 1.78;
+}
+
+/* ─── LAYOUT ─── */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 4vw, 3rem);
+}
+
+.container-narrow {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 4vw, 3rem);
+}
+
+section {
+  padding: clamp(4rem, 8vw, 8rem) 0;
+}
+
+/* ─── FIXED HEADER ─── */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 1rem 0;
+  background: rgba(4,7,24,0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(87,155,230,0.08);
+  transition: all 0.4s ease;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 4vw, 3rem);
+}
+
+.header-logo {
+  height: 40px;
+  width: auto;
+  filter: brightness(1.1);
+}
+
+.header-nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.header-nav a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  transition: color 0.3s;
+}
+
+.header-nav a:hover { color: var(--accent); }
+
+.btn-header-cta {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--white) !important;
+  background: var(--accent);
+  padding: 0.6rem 1.4rem;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: all 0.3s;
+  letter-spacing: 0.02em;
+}
+
+.btn-header-cta:hover {
+  background: var(--accent-glow);
+  box-shadow: 0 0 24px rgba(87,155,230,0.4);
+}
+
+/* ─── HERO ─── */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: var(--navy-deep);
+  overflow: hidden;
+  padding-top: 80px;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse 120% 80% at 50% 40%, var(--navy-mid) 0%, var(--navy-deep) 80%),
+    linear-gradient(180deg, var(--navy-deep) 0%, var(--navy) 100%);
+}
+
+/* Subtle noise texture — no grid */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 50% at 50% 45%, rgba(87,155,230,0.04) 0%, transparent 70%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 4vw, 3rem);
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 4rem;
+  align-items: center;
+}
+
+.hero-text { max-width: 720px; }
+
+.hero-certification-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(87,155,230,0.1);
+  border: 1px solid rgba(87,155,230,0.25);
+  padding: 0.5rem 1.2rem;
+  border-radius: 100px;
+  margin-bottom: 2rem;
+}
+
+.hero-certification-badge span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero-certification-badge .dot {
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.5); }
+}
+
+.hero h1 {
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.hero h1 .accent { 
+  color: var(--white);
+  position: relative;
+  display: inline-block;
+}
+
+.hero h1 .accent::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+.hero h1 .gold-accent { color: var(--white); }
+
+.hero-tagline {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  font-weight: 400;
+  color: var(--accent-soft);
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.02em;
+}
+
+.hero-date {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+.hero-abstract {
+  font-family: 'Lora', serif;
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.72);
+  line-height: 1.85;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero-stat {
+  text-align: left;
+}
+
+.hero-stat-number {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.hero-stat-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.45);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 0.3rem;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--white);
+  background: var(--accent);
+  padding: 1rem 2.2rem;
+  border-radius: 100px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.35s ease;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+}
+
+.btn-primary:hover {
+  background: var(--accent-glow);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(87,155,230,0.35);
+}
+
+.btn-secondary {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.8);
+  background: transparent;
+  padding: 1rem 2.2rem;
+  border-radius: 100px;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.2);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.35s ease;
+}
+
+.btn-secondary:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Hero sidebar — key facts card */
+.hero-sidebar {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  backdrop-filter: blur(12px);
+}
+
+.hero-sidebar h3 {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.sidebar-item:last-child { border: none; }
+
+.sidebar-item-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.5);
+  font-weight: 400;
+}
+
+.sidebar-item-value {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  color: var(--white);
+  font-weight: 600;
+  text-align: right;
+}
+
+.sidebar-item-value .teal { color: var(--accent); }
+
+.sidebar-start-date {
+  margin-top: 1.5rem;
+  text-align: center;
+  padding: 1.2rem;
+  background: rgba(87,155,230,0.08);
+  border: 1px solid rgba(87,155,230,0.2);
+  border-radius: var(--radius-md);
+}
+
+.sidebar-start-date .label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.65rem;
+  color: rgba(255,255,255,0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.sidebar-start-date .date {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-top: 0.25rem;
+}
+
+/* ─── ABSTRACT / WHY THIS PROGRAM ─── */
+.abstract-section {
+  background: var(--white);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.abstract-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.abstract-content p {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.25rem;
+}
+
+.abstract-content p strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.abstract-pullquote {
+  position: relative;
+  padding: 2.5rem;
+  background: var(--navy-deep);
+  border-radius: var(--radius-lg);
+  color: var(--white);
+}
+
+.abstract-pullquote::before {
+  content: '"';
+  position: absolute;
+  top: -0.3rem;
+  left: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 5rem;
+  font-weight: 800;
+  color: var(--accent);
+  opacity: 0.3;
+  line-height: 1;
+}
+
+.abstract-pullquote p {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.85);
+  position: relative;
+  z-index: 1;
+}
+
+.abstract-pullquote .attribution {
+  margin-top: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 0.75rem;
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.market-data-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.data-card {
+  background: var(--ivory-warm);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.data-card-value {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--navy);
+  letter-spacing: -0.02em;
+}
+
+.data-card-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  margin-top: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+}
+
+.data-card-source {
+  font-family: 'Lora', serif;
+  font-size: 0.65rem;
+  color: var(--slate-light);
+  font-style: italic;
+  margin-top: 0.4rem;
+}
+
+/* ─── HIGHLIGHTS ─── */
+.highlights-section {
+  background: var(--navy-deep);
+  position: relative;
+  overflow: hidden;
+}
+
+.highlights-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 80% 20%, rgba(87,155,230,0.06) 0%, transparent 50%);
 }
-
-.header-nav a{
-  font-family:'Poppins',sans-serif;
-  font-size:0.78rem;
-  font-weight:500;
-  color:rgba(255,255,255,0.72);
-  text-decoration:none;
-  letter-spacing:0.05em;
-  white-space:nowrap;
-  padding:10px 4px;
-  display:inline-flex;
-  align-items:center;
-  transition:color 0.3s;
-}
-
-.header-nav a:hover{color:var(--accent-glow)}
-
-.btn-header-cta{
-  font-family:'Poppins',sans-serif;
-  font-size:0.78rem;
-  font-weight:600;
-  color:var(--navy-deep) !important;
-  background:linear-gradient(135deg,var(--gold-light),var(--gold));
-  padding:10px 22px !important;
-  border-radius:100px;
-  text-decoration:none;
-  letter-spacing:0.04em;
-  white-space:nowrap;
-  transition:all 0.3s;
-}
-
-.btn-header-cta:hover{
-  background:linear-gradient(135deg,#DDB23C,var(--gold-light));
-  box-shadow:0 0 24px rgba(175,125,31,0.45);
-}
-
-/* --- HERO --- */
-.hero{
-  position:relative;
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  overflow:hidden;
-  padding-top:96px;
-  padding-bottom:clamp(4rem,8vw,7rem);
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  position: relative;
+  z-index: 1;
 }
 
-.hero::before{
-  content:'';
-  position:absolute;inset:0;
-  background:radial-gradient(ellipse 90% 70% at 50% 38%,rgba(42,90,155,0.22) 0%,transparent 70%);
-  pointer-events:none;
+.highlight-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  transition: all 0.4s ease;
+}
+
+.highlight-card:hover {
+  background: rgba(87,155,230,0.05);
+  border-color: rgba(87,155,230,0.15);
+  transform: translateY(-3px);
+}
+
+.highlight-number {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  margin-bottom: 0.75rem;
+}
+
+.highlight-card h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 0.6rem;
+  line-height: 1.35;
 }
 
-.hero::after{
-  content:'';
-  position:absolute;inset:0;
-  background:radial-gradient(ellipse 55% 45% at 55% 45%,rgba(87,154,218,0.06) 0%,transparent 70%);
-  pointer-events:none;
+.highlight-card p {
+  font-family: 'Lora', serif;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.65;
+}
+
+/* ─── TARGET AUDIENCE ─── */
+.audience-section {
+  background: var(--white);
 }
 
-.hero-content{
-  position:relative;z-index:2;width:100%;
-  max-width:1200px;margin:0 auto;
-  padding:0 clamp(1.5rem,4vw,3rem);
-  display:grid;
-  grid-template-columns:1fr 380px;
-  gap:4rem;
-  align-items:center;
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-top: 3rem;
 }
 
-.hero-text{max-width:720px}
-
-.hero-certification-badge{
-  display:inline-flex;align-items:center;gap:0.5rem;
-  background:rgba(87,154,218,0.10);
-  border:1px solid rgba(87,154,218,0.25);
-  padding:0.5rem 1.2rem;border-radius:100px;
-  margin-bottom:2.2rem;
+.audience-card {
+  padding: 1.8rem;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  transition: all 0.35s ease;
+  background: var(--white);
 }
 
-.hero-certification-badge span{
-  font-family:'Poppins',sans-serif;
-  font-size:0.72rem;font-weight:600;
-  color:var(--accent-glow);
-  letter-spacing:0.14em;text-transform:uppercase;
+.audience-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
 }
 
-.hero-certification-badge .dot{
-  width:6px;height:6px;background:var(--accent-glow);
-  border-radius:50%;animation:pulse-dot 2s ease-in-out infinite;
-  flex-shrink:0;
+.audience-card h4 {
+  font-size: 0.95rem;
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+}
+
+.audience-card p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.audience-card .roles {
+  margin-top: 0.75rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.72rem;
+  color: var(--accent-dark);
+  font-weight: 500;
 }
-
-@keyframes pulse-dot{
-  0%,100%{opacity:1;transform:scale(1)}
-  50%{opacity:0.5;transform:scale(1.5)}
+
+/* ─── CURRICULUM ─── */
+.curriculum-section {
+  background: var(--ivory-warm);
 }
 
-.hero h1{color:var(--white);margin-bottom:1.1rem}
+.phase-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
 
-.hero h1 .accent{color:var(--white);position:relative;display:inline-block}
+.phase-header:first-of-type { margin-top: 0; }
 
-.hero h1 .accent::after{
-  content:'';
-  position:absolute;
-  bottom:-6px;left:0;
-  width:50px;height:2px;
-  background:var(--gold-light);
+.phase-tag {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--white);
+  background: var(--accent);
+  padding: 0.35rem 1rem;
+  border-radius: 100px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
-
-.hero h1 .gold-accent{color:var(--white)}
-
-.hero-tagline{
-  font-family:'Lora',serif;
-  font-style:italic;
-  font-size:clamp(1.05rem,2vw,1.4rem);
-  font-weight:400;
-  color:var(--accent-soft);
-  margin-bottom:0.6rem;
-  letter-spacing:0.02em;
+
+.phase-header h3 {
+  font-size: 1.1rem;
+  color: var(--navy);
 }
 
-.hero-date{
-  font-family:'Poppins',sans-serif;
-  font-size:0.78rem;font-weight:600;
-  color:var(--gold-light);
-  letter-spacing:0.22em;text-transform:uppercase;
-  margin-bottom:2.5rem;
+.module-card {
+  background: var(--white);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
-.hero-abstract{
-  font-family:'Lora',serif;
-  font-size:1.05rem;
-  color:rgba(255,255,255,0.72);
-  line-height:1.85;
-  margin-bottom:2.5rem;
-  max-width:600px;
+.module-card:hover {
+  box-shadow: var(--shadow-md);
 }
 
-.hero-stats{display:flex;gap:2.5rem;margin-bottom:2.5rem;flex-wrap:wrap}
-
-.hero-stat{text-align:left}
-
-.hero-stat-number{
-  font-family:'Poppins',sans-serif;
-  font-size:2.2rem;font-weight:800;
-  color:var(--gold-light);
-  line-height:1;letter-spacing:-0.02em;
+.module-card-header {
+  display: grid;
+  grid-template-columns: 56px 1fr auto;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+  gap: 1.25rem;
 }
 
-.hero-stat-label{
-  font-family:'Poppins',sans-serif;
-  font-size:0.7rem;font-weight:500;
-  color:var(--text-faint);
-  text-transform:uppercase;letter-spacing:0.12em;
-  margin-top:0.35rem;
+.module-number {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--accent);
+  text-align: center;
+  line-height: 1;
 }
-
-.hero-ctas{display:flex;gap:1rem;flex-wrap:wrap}
 
-.btn-primary{
-  font-family:'Poppins',sans-serif;
-  font-size:0.9rem;font-weight:600;
-  color:var(--navy-deep);
-  background:linear-gradient(135deg,var(--gold-light),var(--gold));
-  padding:1rem 2.2rem;border-radius:100px;
-  text-decoration:none;
-  display:inline-flex;align-items:center;gap:0.5rem;
-  transition:all 0.35s ease;border:none;cursor:pointer;
-  letter-spacing:0.02em;white-space:nowrap;
-}
+.module-info h4 {
+  font-size: 0.95rem;
+  color: var(--navy);
+  line-height: 1.35;
+  margin-bottom: 0.15rem;
+}
+
+.module-meta {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+}
 
-.btn-primary:hover{
-  background:linear-gradient(135deg,#DDB23C,var(--gold-light));
-  transform:translateY(-2px);
-  box-shadow:0 8px 32px rgba(175,125,31,0.4);
+.module-toggle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  color: var(--accent);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(87,155,230,0.08);
+  transition: transform 0.3s ease;
 }
-
-.btn-secondary{
-  font-family:'Poppins',sans-serif;
-  font-size:0.9rem;font-weight:500;
-  color:rgba(255,255,255,0.82);
-  background:transparent;
-  padding:1rem 2.2rem;border-radius:100px;
-  text-decoration:none;
-  border:1px solid rgba(255,255,255,0.22);
-  display:inline-flex;align-items:center;gap:0.5rem;
-  transition:all 0.35s ease;white-space:nowrap;
+
+.module-card.active .module-toggle {
+  transform: rotate(45deg);
 }
-
-.btn-secondary:hover{border-color:var(--accent-glow);color:var(--accent-glow)}
 
-/* Ficha lateral del hero */
-.hero-sidebar{
-  background:var(--surface);
-  border:1px solid var(--border-subtle);
-  border-radius:var(--radius-lg);
-  padding:2.5rem;
-  backdrop-filter:blur(12px);
+.module-body {
+  display: none;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  border-top: 1px solid var(--border-subtle);
 }
 
-.hero-sidebar h3{
-  font-size:0.7rem;font-weight:600;
-  color:var(--accent-glow);
-  letter-spacing:0.18em;text-transform:uppercase;
-  margin-bottom:1.5rem;
-}
+.module-card.active .module-body { display: block; }
 
-.sidebar-item{
-  display:flex;justify-content:space-between;align-items:baseline;
-  gap:1rem;
-  padding:0.85rem 0;
-  border-bottom:1px solid var(--line-soft);
+.module-objective {
+  background: rgba(87,155,230,0.04);
+  border-left: 3px solid var(--accent);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+  margin-top: 1rem;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
 
-.sidebar-item:last-of-type{border:none}
-
-.sidebar-item-label{
-  font-family:'Poppins',sans-serif;
-  font-size:0.78rem;color:var(--text-faint);font-weight:400;
-  white-space:nowrap;
+.module-objective h5 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
 }
 
-.sidebar-item-value{
-  font-family:'Poppins',sans-serif;
-  font-size:0.88rem;color:var(--white);font-weight:600;text-align:right;
+.module-objective p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
 }
-
-.sidebar-item-value .teal{color:var(--accent-glow)}
 
-.sidebar-start-date{
-  margin-top:1.5rem;text-align:center;padding:1.2rem;
-  background:rgba(175,125,31,0.08);
-  border:1px solid rgba(175,125,31,0.28);
-  border-radius:var(--radius-md);
+.module-topics h5 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
-.sidebar-start-date .label{
-  font-family:'Poppins',sans-serif;
-  font-size:0.64rem;color:var(--text-faint);
-  text-transform:uppercase;letter-spacing:0.18em;
+.module-topics ul {
+  list-style: none;
+  padding: 0;
 }
 
-.sidebar-start-date .date{
-  font-family:'Poppins',sans-serif;
-  font-size:1.35rem;font-weight:700;color:var(--gold-light);
-  margin-top:0.25rem;letter-spacing:0.04em;text-transform:uppercase;
+.module-topics li {
+  position: relative;
+  padding: 0.45rem 0 0.45rem 1.5rem;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
 }
 
-/* --- FRANJA CUPO LIMITADO --- */
-.urgency-strip{
-  display:flex;align-items:center;justify-content:center;
-  gap:1.25rem;flex-wrap:wrap;
-  padding:1rem clamp(1.25rem,4vw,3rem);
-  background:rgba(175,125,31,0.07);
-  border-top:1px solid rgba(175,125,31,0.28);
-  border-bottom:1px solid rgba(175,125,31,0.28);
-  font-family:'Poppins',sans-serif;
-  font-size:0.72rem;font-weight:600;
-  letter-spacing:0.26em;text-transform:uppercase;
-  color:var(--gold-light);
-  text-align:center;
+.module-topics li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.85rem;
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
 }
 
-.urgency-strip .urgency-sep{
-  width:50px;height:2px;background:var(--gold-light);flex-shrink:0;
+/* ─── TOTAL SUMMARY BAR ─── */
+.curriculum-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+  padding: 2.5rem;
+  background: var(--navy-deep);
+  border-radius: var(--radius-lg);
 }
 
-/* --- ABSTRACT --- */
-.abstract-section{background:transparent}
-
-.abstract-grid{
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:4rem;align-items:start;
+.summary-item {
+  text-align: center;
 }
 
-.abstract-content p{
-  font-size:1.05rem;
-  color:var(--text-secondary);
-  margin-bottom:1.25rem;
+.summary-item .number {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
 }
-
-.abstract-content p strong{color:var(--ivory);font-weight:600}
 
-.abstract-pullquote{
-  position:relative;padding:2.5rem;
-  background:rgba(13,33,81,0.55);
-  border:1px solid var(--line-soft);
-  border-radius:var(--radius-lg);
-  color:var(--white);
+.summary-item .label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-top: 0.3rem;
 }
 
-.abstract-pullquote::before{
-  content:'\201C';
-  position:absolute;top:-0.3rem;left:1.5rem;
-  font-family:'Poppins',sans-serif;
-  font-size:5rem;font-weight:800;
-  color:var(--accent-glow);opacity:0.3;line-height:1;
+/* ─── FACULTY PLACEHOLDER ─── */
+.faculty-section {
+  background: var(--white);
 }
 
-.abstract-pullquote p{
-  font-family:'Lora',serif;font-style:italic;
-  font-size:1.15rem;line-height:1.75;
-  color:rgba(255,255,255,0.85);
-  position:relative;z-index:1;
+.faculty-note {
+  background: var(--ivory-warm);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  text-align: center;
+  max-width: 700px;
+  margin: 2rem auto 0;
 }
 
-.abstract-pullquote .attribution{
-  margin-top:1rem;
-  font-family:'Poppins',sans-serif;font-style:normal;
-  font-size:0.75rem;color:var(--accent-glow);
-  font-weight:600;letter-spacing:0.06em;
+.faculty-note p {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
 }
 
-.market-data-bar{
-  display:grid;grid-template-columns:repeat(4,1fr);
-  gap:1.5rem;margin-top:4rem;
+.faculty-note .emphasis {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--navy);
 }
 
-.data-card{
-  background:var(--surface);
-  border:1px solid var(--line-soft);
-  border-radius:var(--radius-md);
-  padding:1.6rem;text-align:center;
+/* ─── METHODOLOGY ─── */
+.methodology-section {
+  background: var(--navy);
+  position: relative;
 }
 
-.data-card-value{
-  font-family:'Poppins',sans-serif;
-  font-size:1.6rem;font-weight:800;
-  color:var(--ivory);letter-spacing:-0.01em;
+.method-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
 }
 
-.data-card-label{
-  font-family:'Poppins',sans-serif;
-  font-size:0.68rem;color:var(--text-secondary);
-  margin-top:0.3rem;text-transform:uppercase;
-  letter-spacing:0.08em;font-weight:500;
+.method-card {
+  text-align: center;
+  padding: 2.5rem 2rem;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: var(--radius-lg);
 }
 
-.data-card-source{
-  font-family:'Lora',serif;font-size:0.65rem;
-  color:var(--text-faint);font-style:italic;margin-top:0.4rem;
+.method-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-/* --- HIGHLIGHTS --- */
-.highlights-section{
-  background:rgba(4,10,26,0.28);
-  border-top:1px solid var(--line-soft);
-  border-bottom:1px solid var(--line-soft);
-  position:relative;overflow:hidden;
+.method-card h3 {
+  font-size: 1.1rem;
+  color: var(--accent);
+  margin-bottom: 0.6rem;
 }
 
-.highlights-section::before{
-  content:'';position:absolute;inset:0;
-  background:radial-gradient(circle at 80% 20%,rgba(87,154,218,0.06) 0%,transparent 50%);
+.method-card p {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.7;
 }
 
-.highlights-grid{
-  display:grid;grid-template-columns:repeat(2,1fr);
-  gap:1.5rem;position:relative;z-index:1;
+/* ─── LATAM SECTION ─── */
+.latam-section {
+  background: var(--ivory-warm);
 }
 
-.highlight-card{
-  background:var(--surface);
-  border:1px solid var(--line-soft);
-  border-radius:var(--radius-md);
-  padding:2rem;transition:all 0.4s ease;
+.latam-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-top: 2.5rem;
 }
 
-.highlight-card:hover{
-  background:rgba(87,154,218,0.05);
-  border-color:rgba(87,154,218,0.15);
-  transform:translateY(-3px);
+.latam-card {
+  background: var(--white);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.8rem;
 }
 
-.highlight-number{
-  font-family:'Poppins',sans-serif;
-  font-size:0.7rem;font-weight:700;
-  color:var(--gold-light);letter-spacing:0.12em;
-  margin-bottom:0.75rem;
+.latam-card h4 {
+  font-size: 1rem;
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.highlight-card h3{
-  font-size:1.02rem;font-weight:600;color:var(--white);
-  margin-bottom:0.6rem;line-height:1.35;
+.latam-card p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
 }
 
-.highlight-card p{
-  font-family:'Lora',serif;font-size:0.9rem;
-  color:var(--text-secondary);line-height:1.65;
+/* ─── FORM SECTION ─── */
+.form-section {
+  background: var(--navy-deep);
+  position: relative;
+  overflow: hidden;
 }
 
-/* --- AUDIENCIA --- */
-.audience-section{background:transparent}
-
-.audience-grid{
-  display:grid;grid-template-columns:repeat(3,1fr);
-  gap:1.25rem;margin-top:3.5rem;
+.form-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(87,155,230,0.06) 0%, transparent 50%),
+    radial-gradient(circle at 80% 30%, rgba(212,168,75,0.04) 0%, transparent 50%);
 }
 
-.audience-card{
-  padding:1.8rem;
-  border:1px solid var(--line-soft);
-  border-radius:var(--radius-md);
-  transition:all 0.35s ease;
-  background:var(--surface);
+.form-container {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
 }
 
-.audience-card:hover{
-  border-color:rgba(87,154,218,0.3);
-  transform:translateY(-2px);
+.form-left h2 {
+  color: var(--white);
+  margin-bottom: 1rem;
 }
-
-.audience-card h4{font-size:0.95rem;color:var(--ivory);margin-bottom:0.5rem}
-
-.audience-card p{font-size:0.85rem;color:var(--text-secondary);line-height:1.6}
 
-.audience-card .roles{
-  margin-top:0.75rem;
-  font-family:'Poppins',sans-serif;
-  font-size:0.7rem;color:var(--accent-glow);font-weight:500;
-  letter-spacing:0.03em;
+.form-left p {
+  color: rgba(255,255,255,0.6);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin-bottom: 2rem;
 }
 
-/* --- METODOLOGIA --- */
-.methodology-section{
-  background:rgba(4,10,26,0.28);
-  border-top:1px solid var(--line-soft);
-  border-bottom:1px solid var(--line-soft);
-  position:relative;
+.form-benefits {
+  list-style: none;
+  padding: 0;
 }
 
-.method-grid{
-  display:grid;grid-template-columns:repeat(3,1fr);
-  gap:2rem;margin-top:3.5rem;
+.form-benefits li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.6rem 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.7);
 }
 
-.method-card{
-  text-align:center;padding:2.8rem 2rem;
-  background:var(--surface);
-  border:1px solid var(--line-soft);
-  border-radius:var(--radius-lg);
+.form-benefits li .check {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
 }
 
-.method-card h3{
-  font-size:1rem;color:var(--gold-light);
-  margin-bottom:0.9rem;
-  text-transform:uppercase;letter-spacing:0.14em;
+.form-right {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
 }
 
-.method-card p{font-size:0.9rem;color:var(--text-secondary);line-height:1.7}
-
-/* --- CURRICULUM --- */
-.curriculum-section{background:transparent}
-
-.phase-header{
-  display:flex;align-items:center;gap:1rem;
-  margin-bottom:2rem;margin-top:3.5rem;
+.form-right h3 {
+  font-size: 1.1rem;
+  color: var(--white);
+  margin-bottom: 0.4rem;
 }
-
-.phase-header:first-of-type{margin-top:0}
 
-.phase-tag{
-  font-family:'Poppins',sans-serif;
-  font-size:0.64rem;font-weight:700;
-  color:var(--white);background:var(--accent);
-  padding:0.35rem 1rem;border-radius:100px;
-  letter-spacing:0.12em;text-transform:uppercase;
-  white-space:nowrap;
+.form-right .form-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.4);
+  margin-bottom: 1.5rem;
 }
 
-.phase-header h3{
-  font-size:0.95rem;color:var(--ivory);
-  text-transform:uppercase;letter-spacing:0.08em;
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
 
-.module-card{
-  background:var(--surface);
-  border:1px solid var(--line-soft);
-  border-radius:var(--radius-md);
-  margin-bottom:1rem;overflow:hidden;
-  transition:border-color 0.3s ease;
+.form-group {
+  margin-bottom: 1rem;
 }
 
-.module-card:hover{border-color:rgba(87,154,218,0.25)}
-
-.module-card-header{
-  display:grid;grid-template-columns:56px 1fr auto;
-  align-items:center;
-  padding:1.25rem 1.5rem;cursor:pointer;gap:1.25rem;
+.form-group label {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
-.module-number{
-  font-family:'Poppins',sans-serif;
-  font-size:1.3rem;font-weight:800;
-  color:var(--accent-glow);text-align:center;line-height:1;
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-sm);
+  color: var(--white);
+  font-family: 'Lora', serif;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+  outline: none;
 }
 
-.module-info h4{
-  font-size:0.95rem;color:var(--ivory);
-  line-height:1.35;margin-bottom:0.15rem;
+.form-group input::placeholder {
+  color: rgba(255,255,255,0.25);
 }
 
-.module-meta{
-  font-family:'Poppins',sans-serif;
-  font-size:0.7rem;color:var(--text-faint);font-weight:400;
+.form-group input:focus,
+.form-group select:focus {
+  border-color: var(--accent);
+  background: rgba(87,155,230,0.06);
+  box-shadow: 0 0 0 3px rgba(87,155,230,0.1);
 }
 
-.module-toggle{
-  font-family:'Poppins',sans-serif;
-  font-size:1.4rem;color:var(--accent-glow);
-  width:32px;height:32px;
-  display:flex;align-items:center;justify-content:center;
-  border-radius:50%;background:rgba(87,154,218,0.10);
-  transition:transform 0.3s ease;
-  flex-shrink:0;
+.form-group select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2300BFA6' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem center;
+  background-size: 16px;
+  padding-right: 2.5rem;
 }
 
-.module-card.active .module-toggle{transform:rotate(45deg)}
-
-.module-body{
-  display:none;
-  padding:0 1.5rem 1.5rem 1.5rem;
-  border-top:1px solid var(--line-soft);
+.form-group select option {
+  background: var(--navy-deep);
+  color: var(--white);
 }
-
-.module-card.active .module-body{display:block}
 
-.module-objective{
-  background:rgba(87,154,218,0.06);
-  border-left:3px solid var(--accent-glow);
-  padding:1rem 1.25rem;
-  margin-bottom:1.25rem;margin-top:1rem;
-  border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+.form-disclaimer {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.68rem;
+  color: rgba(255,255,255,0.3);
+  margin-top: 0.5rem;
+  line-height: 1.5;
 }
 
-.module-objective h5{
-  font-family:'Poppins',sans-serif;
-  font-size:0.7rem;font-weight:600;
-  color:var(--accent-glow);
-  text-transform:uppercase;letter-spacing:0.1em;
-  margin-bottom:0.5rem;
+.btn-submit {
+  width: 100%;
+  margin-top: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--white);
+  background: var(--accent);
+  padding: 1.1rem;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.35s;
+  letter-spacing: 0.02em;
 }
 
-.module-objective p{font-size:0.9rem;color:var(--text-secondary);line-height:1.7}
-
-.module-topics h5{
-  font-family:'Poppins',sans-serif;
-  font-size:0.75rem;font-weight:600;color:var(--ivory);
-  margin-bottom:0.75rem;
-  text-transform:uppercase;letter-spacing:0.08em;
+.btn-submit:hover {
+  background: var(--accent-glow);
+  box-shadow: 0 8px 32px rgba(87,155,230,0.35);
+  transform: translateY(-1px);
 }
-
-.module-topics ul{list-style:none;padding:0}
 
-.module-topics li{
-  position:relative;
-  padding:0.45rem 0 0.45rem 1.5rem;
-  font-size:0.88rem;color:var(--text-secondary);line-height:1.55;
+.form-secure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.68rem;
+  color: rgba(255,255,255,0.3);
 }
 
-.module-topics li::before{
-  content:'';position:absolute;left:0;top:0.95rem;
-  width:6px;height:2px;
-  background:var(--gold-light);
+/* ─── SUCCESS MESSAGE ─── */
+.form-success {
+  display: none;
+  text-align: center;
+  padding: 3rem 2rem;
 }
 
-.module-topics li strong{color:var(--ivory);font-weight:600}
+.form-success.show { display: block; }
+.form-right.submitted form { display: none; }
+.form-right.submitted .form-success { display: block; }
 
-/* --- RESUMEN --- */
-.curriculum-summary{
-  display:grid;grid-template-columns:repeat(4,1fr);
-  gap:1.5rem;margin-top:4rem;padding:2.8rem;
-  background:rgba(13,33,81,0.55);
-  border:1px solid var(--line);
-  border-radius:var(--radius-lg);
+.form-success .check-circle {
+  width: 64px;
+  height: 64px;
+  background: var(--accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 2rem;
+  color: var(--white);
 }
 
-.summary-item{text-align:center}
-
-.summary-item .number{
-  font-family:'Poppins',sans-serif;
-  font-size:2.5rem;font-weight:800;
-  color:var(--gold-light);line-height:1;
+.form-success h3 {
+  color: var(--white);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
 }
 
-.summary-item .label{
-  font-family:'Poppins',sans-serif;
-  font-size:0.68rem;color:var(--text-faint);
-  text-transform:uppercase;letter-spacing:0.14em;
-  margin-top:0.4rem;
+.form-success p {
+  color: rgba(255,255,255,0.6);
+  font-size: 0.95rem;
 }
 
-/* --- FACULTY --- */
-.faculty-section{background:transparent}
-
-.faculty-note{
-  background:var(--surface);
-  border:1px solid var(--line-soft);
-  border-radius:var(--radius-lg);
-  padding:3rem;text-align:center;
-  max-width:700px;margin:2.5rem auto 0;
+/* ─── ACRONYMS ─── */
+.acronyms-section {
+  background: var(--ivory-warm);
+  padding: 3rem 0;
+  border-top: 1px solid var(--border-subtle);
 }
-
-.faculty-note p{font-size:1.05rem;color:var(--text-secondary);margin-bottom:0.5rem}
 
-.faculty-note .emphasis{
-  font-family:'Poppins',sans-serif;
-  font-size:0.82rem;font-weight:600;color:var(--gold-light);
-  letter-spacing:0.06em;text-transform:uppercase;
+.acronyms-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.6rem;
+  margin-top: 1.5rem;
 }
 
-/* --- LATAM --- */
-.latam-section{
-  background:rgba(4,10,26,0.28);
-  border-top:1px solid var(--line-soft);
-  border-bottom:1px solid var(--line-soft);
+.acronym-item {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
 }
 
-.latam-grid{
-  display:grid;grid-template-columns:repeat(4,1fr);
-  gap:1.25rem;margin-top:3rem;
+.acronym-item strong {
+  color: var(--navy);
+  font-weight: 600;
 }
 
-.latam-card{
-  background:var(--surface);
-  border:1px solid var(--line-soft);
-  border-radius:var(--radius-md);
-  padding:1.8rem;
+/* ─── FOOTER ─── */
+.site-footer {
+  background: var(--navy-deep);
+  padding: 3rem 0 2rem;
+  border-top: 1px solid rgba(87,155,230,0.1);
 }
 
-.latam-card h4{
-  font-size:0.9rem;color:var(--gold-light);
-  margin-bottom:0.6rem;
-  text-transform:uppercase;letter-spacing:0.14em;
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.latam-card p{font-size:0.85rem;color:var(--text-secondary);line-height:1.65}
-
-/* --- ACRONIMOS --- */
-.acronyms-section{
-  background:transparent;
-  padding:4rem 0;
-  border-top:1px solid var(--line-soft);
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.acronyms-grid{
-  display:grid;grid-template-columns:repeat(4,1fr);
-  gap:0.6rem;margin-top:2rem;
+.footer-logo {
+  height: 32px;
 }
 
-.acronym-item{
-  font-family:'Poppins',sans-serif;
-  font-size:0.72rem;color:var(--text-faint);line-height:1.5;
+.footer-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.35);
 }
 
-.acronym-item strong{color:var(--text-secondary);font-weight:600}
-
-/* --- FOOTER --- */
-.site-footer{
-  background:rgba(4,10,26,0.45);
-  padding:3rem 0 2rem;
-  border-top:1px solid rgba(87,154,218,0.10);
+.footer-links {
+  display: flex;
+  gap: 2rem;
 }
-
-.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:1.5rem}
 
-.footer-brand{display:flex;align-items:center;gap:1rem}
-
-.footer-text{
-  font-family:'Poppins',sans-serif;
-  font-size:0.72rem;color:var(--text-faint);
+.footer-links a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.4);
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-.footer-links{display:flex;gap:2rem}
+.footer-links a:hover { color: var(--accent); }
 
-.footer-links a{
-  font-family:'Poppins',sans-serif;
-  font-size:0.72rem;color:var(--text-faint);
-  text-decoration:none;transition:color 0.3s;
-  white-space:nowrap;
+/* ─── RESPONSIVE ─── */
+@media (max-width: 1024px) {
+  .hero-content { grid-template-columns: 1fr; }
+  .hero-sidebar { display: none; }
+  .abstract-grid { grid-template-columns: 1fr; }
+  .highlights-grid { grid-template-columns: 1fr; }
+  .audience-grid { grid-template-columns: repeat(2, 1fr); }
+  .method-grid { grid-template-columns: 1fr; }
+  .latam-grid { grid-template-columns: repeat(2, 1fr); }
+  .form-container { grid-template-columns: 1fr; }
+  .market-data-bar { grid-template-columns: repeat(2, 1fr); }
+  .curriculum-summary { grid-template-columns: repeat(2, 1fr); }
+  .acronyms-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
-.footer-links a:hover{color:var(--accent-glow)}
-
-/* --- RESPONSIVE --- */
-@media (max-width:1024px){
-  .hero-content{grid-template-columns:1fr}
-  .hero-sidebar{display:none}
-  .abstract-grid{grid-template-columns:1fr}
-  .highlights-grid{grid-template-columns:1fr}
-  .audience-grid{grid-template-columns:repeat(2,1fr)}
-  .method-grid{grid-template-columns:1fr}
-  .latam-grid{grid-template-columns:repeat(2,1fr)}
-  .market-data-bar{grid-template-columns:repeat(2,1fr)}
-  .curriculum-summary{grid-template-columns:repeat(2,1fr)}
-  .acronyms-grid{grid-template-columns:repeat(2,1fr)}
+@media (max-width: 640px) {
+  .header-nav { display: none; }
+  .hero-stats { flex-direction: column; gap: 1rem; }
+  .hero-ctas { flex-direction: column; }
+  .audience-grid { grid-template-columns: 1fr; }
+  .latam-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .market-data-bar { grid-template-columns: 1fr; }
+  .curriculum-summary { grid-template-columns: 1fr; }
+  .acronyms-grid { grid-template-columns: 1fr; }
+  .footer-inner { flex-direction: column; gap: 1.5rem; text-align: center; }
 }
 
-@media (max-width:640px){
-  .header-nav{gap:1rem}
-  .header-nav .nav-link{display:none}
-  .hero-stats{gap:1.4rem}
-  .hero-ctas{flex-direction:column}
-  .audience-grid{grid-template-columns:1fr}
-  .latam-grid{grid-template-columns:1fr}
-  .market-data-bar{grid-template-columns:1fr}
-  .curriculum-summary{grid-template-columns:1fr}
-  .acronyms-grid{grid-template-columns:1fr}
-  .footer-inner{flex-direction:column;gap:1.5rem;text-align:center}
-  .module-card-header{grid-template-columns:40px 1fr auto;padding:1rem;gap:0.8rem}
+/* ─── ANIMATIONS ─── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-/* --- MODULO DE VENTAS: fix responsive (solo CSS, JS intacto) --- */
-#rm-enroll input,#rm-enroll button{min-width:0;max-width:100%}
-#rm-enroll h2{color:#fff}
-@media (max-width:560px){
-  #rm-enroll form>div{grid-template-columns:1fr !important}
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* --- ANIMACIONES --- */
-.animate-on-scroll{
-  opacity:0;transform:translateY(30px);
-  transition:all 0.8s cubic-bezier(0.16,1,0.3,1);
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
-
-.animate-on-scroll.visible{opacity:1;transform:translateY(0)}
 </style>
 </head>
 <body>
@@ -891,12 +1307,13 @@ section{padding:clamp(4.5rem,9vw,9rem) 0}
 <!-- ════════════ HEADER ════════════ -->
 <header class="site-header">
   <div class="header-inner">
-    <a href="#" class="header-logo" style="text-decoration:none;font-family:'Poppins',sans-serif;font-weight:800;font-size:1.2rem;color:#fff;letter-spacing:.05em;height:auto;display:inline-block">RISK<span style="color:var(--gold)">MATHICS</span></a>
+    <img src="Logo_riskmathics_3D.PNG" alt="RiskMathics" class="header-logo">
     <nav class="header-nav">
-      <a href="#curriculum" class="nav-link">Programa</a>
-      <a href="#highlights" class="nav-link">Highlights</a>
-      <a href="#audience" class="nav-link">Audiencia</a>
-      <a href="#rm-enroll" class="btn-header-cta">Inscribirse</a>
+      <a href="#abstract">Abstract</a>
+      <a href="#highlights">Highlights</a>
+      <a href="#curriculum">Programa</a>
+      <a href="#audience">Audiencia</a>
+      <a href="#contact" class="btn-header-cta">Inscríbete →</a>
     </nav>
   </div>
 </header>
@@ -907,17 +1324,17 @@ section{padding:clamp(4.5rem,9vw,9rem) 0}
     <div class="hero-text">
       <div class="hero-certification-badge">
         <div class="dot"></div>
-        <span>Certification GFDS™ — Inicia Julio 2026</span>
+        <span>Certification Program — Julio 2026</span>
       </div>
       <h1 class="display-xl">
         Global Financial<br>
         <span class="accent">Derivatives</span> <span class="gold-accent">Specialist</span>
       </h1>
       <p class="hero-tagline">Certification Program</p>
-      <p class="hero-date">Julio 2026 — Julio 2027 · Live Online</p>
+      <p class="hero-date">Julio 2026</p>
       <p class="hero-abstract">
         La certificación más completa en Derivados Financieros del mundo hispanohablante. 
-        22 módulos que cubren el ciclo de vida completo del negocio de derivados: 
+        21 módulos que cubren el ciclo de vida completo del negocio de derivados: 
         desde pricing y hedging hasta infraestructura, regulación, XVA, ejecución, 
         y la construcción de mesas de trading.
       </p>
@@ -931,7 +1348,7 @@ section{padding:clamp(4.5rem,9vw,9rem) 0}
           <div class="hero-stat-label">Sesiones</div>
         </div>
         <div class="hero-stat">
-          <div class="hero-stat-number">22</div>
+          <div class="hero-stat-number">21</div>
           <div class="hero-stat-label">Módulos</div>
         </div>
         <div class="hero-stat">
@@ -940,7 +1357,7 @@ section{padding:clamp(4.5rem,9vw,9rem) 0}
         </div>
       </div>
       <div class="hero-ctas">
-        <a href="#rm-enroll" class="btn-primary">Solicitar información →</a>
+        <a href="#contact" class="btn-primary">Solicitar información →</a>
         <a href="#curriculum" class="btn-secondary">Ver programa completo</a>
       </div>
     </div>
@@ -960,12 +1377,8 @@ section{padding:clamp(4.5rem,9vw,9rem) 0}
         <span class="sidebar-item-value"><span class="teal">320</span> horas</span>
       </div>
       <div class="sidebar-item">
-        <span class="sidebar-item-label">Calendario</span>
-        <span class="sidebar-item-value">Jul 2026 – Jul 2027</span>
-      </div>
-      <div class="sidebar-item">
         <span class="sidebar-item-label">Módulos</span>
-        <span class="sidebar-item-value">22</span>
+        <span class="sidebar-item-value">21</span>
       </div>
       <div class="sidebar-item">
         <span class="sidebar-item-label">Idioma</span>
@@ -983,21 +1396,13 @@ section{padding:clamp(4.5rem,9vw,9rem) 0}
   </div>
 </section>
 
-<!-- ════════════ CUPO LIMITADO ════════════ -->
-<div class="urgency-strip">
-  <span>Cupo limitado</span>
-  <span class="urgency-sep"></span>
-  <span>Inicia Julio 2026 &middot; Live Online</span>
-</div>
-
 <!-- ════════════ ABSTRACT ════════════ -->
 <section class="abstract-section" id="abstract">
   <div class="container">
     <span class="section-label">Abstract ejecutivo</span>
-    <h2 class="display-md" style="margin-top: 0.75rem;">
+    <h2 class="display-md" style="margin-top: 0.75rem; color: var(--navy);">
       Por qué este programa existe
     </h2>
-    <div class="accent-line"></div>
 
     <div class="abstract-grid" style="margin-top: 2.5rem;">
       <div class="abstract-content">
@@ -1027,17 +1432,6 @@ section{padding:clamp(4.5rem,9vw,9rem) 0}
             pricing + infraestructura + regulación + modelo operativo, en un solo lugar.
           </p>
           <div class="attribution">— Filosofía GFDS™ | RiskMathics</div>
-        </div>
-        <div style="margin-top: 1.5rem; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius-lg); padding: 2rem;">
-          <h3 style="font-family:'Poppins',sans-serif; font-size: 0.72rem; font-weight: 600; color: var(--accent-glow); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 1rem;">Al graduarte serás capaz de</h3>
-          <ul style="list-style: none; padding: 0; margin: 0;">
-            <li style="display:flex; gap:0.6rem; padding:0.35rem 0; font-family:'Lora',serif; font-size:0.9rem; color:var(--text-secondary); line-height:1.6;"><span style="color:var(--gold-light); font-weight:700;">&mdash;</span><span>Estructurar y valuar (pricing) derivados listados y OTC con criterios de no-arbitraje</span></li>
-            <li style="display:flex; gap:0.6rem; padding:0.35rem 0; font-family:'Lora',serif; font-size:0.9rem; color:var(--text-secondary); line-height:1.6;"><span style="color:var(--gold-light); font-weight:700;">&mdash;</span><span>Diseñar coberturas y estrategias (hedging) con medición de efectividad, costos y riesgos residuales</span></li>
-            <li style="display:flex; gap:0.6rem; padding:0.35rem 0; font-family:'Lora',serif; font-size:0.9rem; color:var(--text-secondary); line-height:1.6;"><span style="color:var(--gold-light); font-weight:700;">&mdash;</span><span>Cotizar y negociar entendiendo XVA, colateral, capital y documentación (ISDA/CSA)</span></li>
-            <li style="display:flex; gap:0.6rem; padding:0.35rem 0; font-family:'Lora',serif; font-size:0.9rem; color:var(--text-secondary); line-height:1.6;"><span style="color:var(--gold-light); font-weight:700;">&mdash;</span><span>Ejecutar con criterio de microestructura (DMA/RFQ), best execution y control de costos</span></li>
-            <li style="display:flex; gap:0.6rem; padding:0.35rem 0; font-family:'Lora',serif; font-size:0.9rem; color:var(--text-secondary); line-height:1.6;"><span style="color:var(--gold-light); font-weight:700;">&mdash;</span><span>Montar (o auditar) el operating model de una mesa: front-to-back, límites, reporteo y KPIs</span></li>
-            <li style="display:flex; gap:0.6rem; padding:0.35rem 0; font-family:'Lora',serif; font-size:0.9rem; color:var(--text-secondary); line-height:1.6;"><span style="color:var(--gold-light); font-weight:700;">&mdash;</span><span>Evaluar a un dealer / contraparte con checklist real: pricing, spreads, comisiones, colateral, netting y conducta</span></li>
-          </ul>
         </div>
       </div>
     </div>
@@ -1070,11 +1464,10 @@ section{padding:clamp(4.5rem,9vw,9rem) 0}
 <!-- ════════════ HIGHLIGHTS ════════════ -->
 <section class="highlights-section" id="highlights">
   <div class="container">
-    <span class="section-label" style="color: var(--accent-glow);">10 Razones</span>
+    <span class="section-label" style="color: var(--accent);">10 Razones</span>
     <h2 class="display-md" style="margin-top: 0.75rem; color: var(--white);">
       Por qué este programa es único
     </h2>
-    <div class="accent-line"></div>
 
     <div class="highlights-grid" style="margin-top: 2.5rem;">
       <div class="highlight-card">
@@ -1138,51 +1531,50 @@ section{padding:clamp(4.5rem,9vw,9rem) 0}
     <h2 class="display-md" style="margin-top: 0.75rem;">
       Perfiles que necesitan dominar el negocio, no solo la teoría
     </h2>
-    <div class="accent-line"></div>
 
     <div class="audience-grid">
       <div class="audience-card">
-        <h4>Banks (Sell-side)</h4>
+        <h4>🏦 Banks (Sell-side)</h4>
         <p>Rentabilizar el balance sheet, cotizar con XVA, controlar riesgos y cumplir regulación.</p>
         <div class="roles">Trading, Sales, Structuring, Treasury/ALM, Risk, Compliance, Ops</div>
       </div>
       <div class="audience-card">
-        <h4>Broker-Dealers</h4>
+        <h4>📈 Broker-Dealers</h4>
         <p>Competir en ejecución, fees, acceso y tecnología; optimizar post-trade.</p>
         <div class="roles">Execution/Algo, Prime, Ops, Risk, Product</div>
       </div>
       <div class="audience-card">
-        <h4>Hedge Funds</h4>
+        <h4>🎯 Hedge Funds</h4>
         <p>Estrategias de vol/credit/macro con foco en ejecución, financing y control de colateral.</p>
         <div class="roles">PMs, Traders, Risk, Ops/Financing</div>
       </div>
       <div class="audience-card">
-        <h4>Asset Managers</h4>
+        <h4>💼 Asset Managers</h4>
         <p>Derivados como overlays (duration, beta, FX) y auditar costos vs dealers.</p>
         <div class="roles">Portfolio Managers, Risk, Trading Desk, Operations</div>
       </div>
       <div class="audience-card">
-        <h4>Pension Funds / AFORES</h4>
+        <h4>🏛️ Pension Funds / AFORES</h4>
         <p>Cobertura masiva con constraints de regulación/contabilidad; governance y métricas.</p>
         <div class="roles">ALM, Investments, Risk, Treasury</div>
       </div>
       <div class="audience-card">
-        <h4>Insurance Companies</h4>
+        <h4>🛡️ Insurance Companies</h4>
         <p>Hedging de guarantees y ALM; contabilidad y capital regulatorio.</p>
         <div class="roles">ALM, Risk, Investments, Actuarial</div>
       </div>
       <div class="audience-card">
-        <h4>Large Corporates</h4>
+        <h4>🏢 Large Corporates</h4>
         <p>Cobertura FX/commodities/tasas con hedge accounting y control de leakages.</p>
         <div class="roles">Treasury, Risk, Accounting, Procurement</div>
       </div>
       <div class="audience-card">
-        <h4>SOFOM / SOFIPO</h4>
+        <h4>🔧 SOFOM / SOFIPO</h4>
         <p>Gestión de riesgo de fondeo/tasa/FX con gobierno y límites.</p>
         <div class="roles">Treasury, Risk, Finance</div>
       </div>
       <div class="audience-card">
-        <h4>Reguladores & Consultoras</h4>
+        <h4>⚖️ Reguladores & Consultoras</h4>
         <p>Entender el plumbing real (CCP, margin, reporting) y diagnosticar mesas con credibilidad técnica.</p>
         <div class="roles">Supervisión, Partners/Managers FS Practice</div>
       </div>
@@ -1198,19 +1590,21 @@ section{padding:clamp(4.5rem,9vw,9rem) 0}
       <h2 class="display-md" style="margin-top: 0.75rem; color: var(--white);">
         Learn. Apply. Profit.
       </h2>
-    <div class="accent-line"></div>
     </div>
 
     <div class="method-grid">
       <div class="method-card">
+        <div class="method-icon">📐</div>
         <h3>Learn</h3>
         <p>Contenido de alcance global con datos reales FIA, BIS, Bloomberg. Cada concepto conectado a un contexto de negocio: pricing, ejecución, regulación, P&L.</p>
       </div>
       <div class="method-card">
+        <div class="method-icon">⚡</div>
         <h3>Apply</h3>
         <p>Casos tipo Harvard/Wharton bajo presión. Capstone War Room sessions con decisiones en tiempo real, reconciliaciones con Bloomberg y simulaciones de mesa.</p>
       </div>
       <div class="method-card">
+        <div class="method-icon">💰</div>
         <h3>Profit</h3>
         <p>Herramientas directamente aplicables a tu rol: checklists de evaluación de dealers, templates de P&L attribution, frameworks de hedge policy, blueprints de mesa.</p>
       </div>
@@ -1223,9 +1617,8 @@ section{padding:clamp(4.5rem,9vw,9rem) 0}
   <div class="container">
     <span class="section-label">Arquitectura del programa</span>
     <h2 class="display-md" style="margin-top: 0.75rem;">
-      22 módulos. 320 horas. 5 fases.
+      21 módulos. 320 horas. 5 fases.
     </h2>
-    <div class="accent-line"></div>
     <p class="body-lg" style="color: var(--text-secondary); margin-top: 1rem; max-width: 700px;">
       Cada módulo está diseñado con objetivo de aprendizaje específico, temario detallado y 
       glosario de acrónimos. Haz clic en cada módulo para expandir el detalle completo.
@@ -1332,7 +1725,7 @@ section{padding:clamp(4.5rem,9vw,9rem) 0}
     <!-- FASE 2 -->
     <div class="phase-header">
       <span class="phase-tag">Fase 2</span>
-      <h3>Advanced Products & Credit (77.5h)</h3>
+      <h3>Advanced Products & Credit (107.5h)</h3>
     </div>
 
     <!-- Module III -->
@@ -1574,7 +1967,7 @@ section{padding:clamp(4.5rem,9vw,9rem) 0}
     <!-- FASE 4 -->
     <div class="phase-header">
       <span class="phase-tag">Fase 4</span>
-      <h3>Regulation, Accounting & Legal (47.5h)</h3>
+      <h3>Regulation, Accounting & Legal (45h)</h3>
     </div>
 
     <div class="module-card">
@@ -1663,7 +2056,7 @@ section{padding:clamp(4.5rem,9vw,9rem) 0}
     <!-- FASE 5 -->
     <div class="phase-header">
       <span class="phase-tag">Fase 5</span>
-      <h3>Frontiers & Institutional Implementation (52.5h)</h3>
+      <h3>Frontiers & Institutional Implementation (60h)</h3>
     </div>
 
     <div class="module-card">
@@ -1730,7 +2123,7 @@ section{padding:clamp(4.5rem,9vw,9rem) 0}
     <div class="module-card">
       <div class="module-card-header" onclick="toggleModule(this)">
         <div class="module-number">XXI</div>
-        <div class="module-info"><h4>Derivatives Desk Blueprint: construcción y administración del área y las mesas de derivados</h4><div class="module-meta">8 sesiones · 20 horas · People / Process / Tech</div></div>
+        <div class="module-info"><h4>Derivatives Desk Blueprint: de cero a la primera operación</h4><div class="module-meta">8 sesiones · 20 horas · People / Process / Tech</div></div>
         <div class="module-toggle">+</div>
       </div>
       <div class="module-body">
@@ -1749,7 +2142,7 @@ section{padding:clamp(4.5rem,9vw,9rem) 0}
     <!-- SUMMARY BAR -->
     <div class="curriculum-summary">
       <div class="summary-item">
-        <div class="number">22</div>
+        <div class="number">21</div>
         <div class="label">Módulos</div>
       </div>
       <div class="summary-item">
@@ -1775,7 +2168,6 @@ section{padding:clamp(4.5rem,9vw,9rem) 0}
     <h2 class="display-md" style="margin-top: 0.75rem;">
       Practitioners de clase mundial
     </h2>
-    <div class="accent-line"></div>
     <div class="faculty-note">
       <p>El programa es impartido por un faculty compuesto por practitioners activos en exchanges, bancos de inversión, asset managers, CCPs y reguladores con amplio reconocimiento global.</p>
       <div class="emphasis" style="margin-top: 1rem;">Perfiles completos del faculty disponibles bajo solicitud.</div>
@@ -1790,198 +2182,152 @@ section{padding:clamp(4.5rem,9vw,9rem) 0}
     <h2 class="display-md" style="margin-top: 0.75rem;">
       LatAm ya no es periférico
     </h2>
-    <div class="accent-line"></div>
     <p class="body-lg" style="color: var(--text-secondary); margin-top: 1rem; max-width: 700px;">
       El diferencial competitivo no es 'saber el producto', sino operar el producto con infraestructura, control y métricas de negocio.
     </p>
 
     <div class="latam-grid">
       <div class="latam-card">
-        <h4>México</h4>
+        <h4>🇲🇽 México</h4>
         <p>Asigna liquidó $3.8 billones de pesos en derivados en 2024 (≈11.4% del PIB). Banxico reporta $32.5B MXN en nocional vigente de tasas e inflación.</p>
       </div>
       <div class="latam-card">
-        <h4>Brasil</h4>
+        <h4>🇧🇷 Brasil</h4>
         <p>B3 reportó ADV de 6.1 millones de contratos en derivados listados (4T24), con profundidad en tasas (BRL), FX y Bitcoin futures.</p>
       </div>
       <div class="latam-card">
-        <h4>Colombia</h4>
+        <h4>🇨🇴 Colombia</h4>
         <p>CRCC: promedio diario aceptado para clearing de COP $23.0 billones (+12% vs 2023). Open interest promedio COP $335.1 billones.</p>
       </div>
       <div class="latam-card">
-        <h4>Chile</h4>
+        <h4>🇨🇱 Chile</h4>
         <p>Stock de derivados vigentes en bancos USD $1.56T con valor de mercado de USD $25.6B. Profundidad OTC (FX y tasas) estructural.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ════════════ REQUISITOS ════════════ -->
-<section style="background: transparent; border-top: 1px solid rgba(255,255,255,0.06); padding: clamp(3.5rem, 6vw, 5.5rem) 0;">
+<!-- ════════════ CONTACT FORM ════════════ -->
+<section class="form-section" id="contact">
   <div class="container">
-    <span class="section-label">Admisión</span>
-    <h2 class="display-md" style="margin-top: 0.75rem;">Requisitos del programa</h2>
-    <div class="accent-line"></div>
-    <div class="audience-grid" style="margin-top: 2rem;">
-      <div class="audience-card">
-        <h4>Formación</h4>
-        <p>Formación Económico-Administrativa y/o Financiera.</p>
+    <div class="form-container">
+      <div class="form-left">
+        <span class="section-label">Inscripción</span>
+        <h2 class="display-md" style="margin-top: 0.75rem;">
+          Asegura tu lugar en la<br>certificación GFDS™
+        </h2>
+        <p>
+          Completa el formulario para recibir información detallada sobre 
+          costos, calendario, opciones de pago y el proceso de admisión.
+        </p>
+        <ul class="form-benefits">
+          <li><span class="check">✓</span> Brochure completo del programa con temarios detallados</li>
+          <li><span class="check">✓</span> Calendario de sesiones y estructura de evaluación</li>
+          <li><span class="check">✓</span> Opciones de inversión y financiamiento</li>
+          <li><span class="check">✓</span> Licencias corporativas y precios institucionales</li>
+          <li><span class="check">✓</span> Acceso prioritario a early-bird pricing</li>
+        </ul>
       </div>
-      <div class="audience-card">
-        <h4>Matemáticas Financieras</h4>
-        <p>Bases sólidas de Matemáticas Financieras.</p>
-      </div>
-      <div class="audience-card">
-        <h4>Experiencia</h4>
-        <p>De preferencia trabajar o haber trabajado en instituciones del medio financiero.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- ===== RISKMATHICS SALES MACHINE v3.2 (inyectable) ===== -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
-<style>
-  #rm-enroll .iti{width:100%;}
-  #rm-enroll .iti__selected-flag{background:transparent;padding-left:0;}
-  #rm-enroll input,#rm-enroll select{outline:none;background:transparent;}
-  #rm-enroll .rm-in{width:100%;border:none;border-bottom:1px solid #dfe5ee;border-radius:0;padding:9px 1px 10px;font-size:15px;font-family:'Lora',Georgia,serif;color:#1b2430;transition:border-color .18s;}
-  #rm-enroll .rm-in:focus{border-bottom-color:#8f9bb0;}
-  #rm-enroll .rm-in::placeholder{color:#b7c0cd;}
-  #rm-enroll .rm-lb{display:block;font-family:'Poppins',Arial,sans-serif;font-size:10px;letter-spacing:1.6px;font-weight:500;color:#93A0B4;text-transform:uppercase;margin-bottom:2px;}
-  #rm-enroll select.rm-in{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%2393A0B4' stroke-width='1.4' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 4px center;padding-right:20px;}
-  @media (max-width:560px){#rm-enroll .rm-2col{grid-template-columns:1fr !important;}}
-</style>
-<section id="rm-enroll" style="background:linear-gradient(135deg,#0D2151,#11203E,#1F3152);color:#fff;padding:88px 22px;font-family:'Poppins',Arial,sans-serif;">
-  <div style="max-width:600px;margin:0 auto;">
-    <div style="text-align:center;margin-bottom:38px;">
-      <div style="color:#C9992F;letter-spacing:3px;font-size:10.5px;font-weight:500;">INSCRIPCIÓN · CUPO LIMITADO</div>
-      <h2 style="font-size:26px;margin:16px 0 0;font-weight:600;line-height:1.25;letter-spacing:.3px;">Asegura tu lugar</h2>
-      <div style="width:50px;height:2px;background:#C9992F;margin:18px auto;"></div>
-      <p style="color:#AEBDD6;font-size:15px;margin:0;font-family:'Lora',Georgia,serif;font-style:italic;">Déjanos tus datos, verifica tu correo y tu WhatsApp,<br>y recibe el temario completo. Sin compromiso.</p>
-    </div>
-    <div style="background:#ffffff;color:#1b2430;border-radius:6px;padding:44px 42px;border:1px solid rgba(255,255,255,.14);box-shadow:0 2px 24px rgba(0,0,0,.16);">
-      <form id="rm-lead" onsubmit="return rmSubmit(event)" style="display:grid;gap:22px;">
-        <div><label class="rm-lb">Nombre(s)</label><input class="rm-in" name="nombre" required></div>
-        <div class="rm-2col" style="display:grid;grid-template-columns:1fr 1fr;gap:22px 20px;">
-          <div><label class="rm-lb">Apellido paterno</label><input class="rm-in" name="apellido_paterno" required></div>
-          <div><label class="rm-lb">Apellido materno</label><input class="rm-in" name="apellido_materno"></div>
-        </div>
-        <div><label class="rm-lb">Email corporativo</label><input class="rm-in" type="email" name="email" required></div>
-        <div class="rm-2col" style="display:grid;grid-template-columns:1fr 1fr;gap:22px 20px;">
-          <div><label class="rm-lb">Puesto</label><input class="rm-in" name="puesto" required></div>
-          <div><label class="rm-lb">Institución / Empresa</label><input class="rm-in" name="empresa" required></div>
-        </div>
-        <div><label class="rm-lb">Sector financiero / industria</label>
-          <select class="rm-in" name="sector" required>
-            <option value="" disabled selected></option>
-            <option>AFORE / Fondos de Pensión</option>
-            <option>Aseguradora / Insurance</option>
-            <option>Banca</option>
-            <option>Casa de Bolsa / Broker Dealer</option>
-            <option>Asset Manager</option>
-            <option>Hedge Fund</option>
-            <option>Family Office</option>
-            <option>Corporativo</option>
-            <option>PyME</option>
-            <option>Gobierno</option>
-            <option>Energía</option>
-            <option>Otro</option>
-          </select>
-        </div>
-        <div class="rm-2col" style="display:grid;grid-template-columns:1fr 1fr;gap:22px 20px;">
-          <div><label class="rm-lb">País</label>
-            <select class="rm-in" name="pais" required>
-              <option value="" disabled data-iso=""></option>
-              <option data-iso="mx" selected>México</option>
-              <option data-iso="us">Estados Unidos</option>
-              <option data-iso="es">España</option>
-              <option data-iso="co">Colombia</option>
-              <option data-iso="pe">Perú</option>
-              <option data-iso="cl">Chile</option>
-              <option data-iso="ar">Argentina</option>
-              <option data-iso="ec">Ecuador</option>
-              <option data-iso="gt">Guatemala</option>
-              <option data-iso="pa">Panamá</option>
-              <option data-iso="cr">Costa Rica</option>
-              <option data-iso="do">República Dominicana</option>
-              <option data-iso="bo">Bolivia</option>
-              <option data-iso="uy">Uruguay</option>
-              <option data-iso="py">Paraguay</option>
-              <option data-iso="ve">Venezuela</option>
-              <option data-iso="hn">Honduras</option>
-              <option data-iso="sv">El Salvador</option>
-              <option data-iso="ni">Nicaragua</option>
-              <option data-iso="br">Brasil</option>
-              <option data-iso="ca">Canadá</option>
-              <option data-iso="">Otro</option>
+      <div class="form-right" id="formContainer">
+        <h3>Solicitar información</h3>
+        <div class="form-subtitle">Los campos marcados con * son obligatorios</div>
+        
+        <form id="gfdsForm" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">Name *</label>
+              <input type="text" id="firstName" name="firstName" placeholder="e.g., Carlos" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Surname *</label>
+              <input type="text" id="lastName" name="lastName" placeholder="e.g., Rodríguez" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="title">Title / Position *</label>
+            <input type="text" id="title" name="title" placeholder="e.g., Head of Trading, VP Risk, Treasurer" required>
+          </div>
+
+          <div class="form-group">
+            <label for="company">Company *</label>
+            <input type="text" id="company" name="company" placeholder="e.g., BBVA México, GBM, Afore XXI Banorte" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Business Email *</label>
+            <input type="email" id="email" name="email" placeholder="nombre@empresa.com" required>
+            <div class="form-disclaimer">Se requiere un correo corporativo. Direcciones @gmail, @hotmail, @yahoo no son aceptadas.</div>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="+52 55 1234 5678">
+          </div>
+
+          <div class="form-group">
+            <label for="sector">Sector *</label>
+            <select id="sector" name="sector" required>
+              <option value="" disabled selected>Selecciona tu sector</option>
+              <option value="bank-sellside">Bank (Sell-side) / Banca Comercial / Banca de Inversión</option>
+              <option value="broker-dealer">Broker-Dealer / FCM / Intermediario</option>
+              <option value="hedge-fund">Hedge Fund / Alternative Investment Manager</option>
+              <option value="asset-manager">Asset Manager / Mutual Fund / ETF Provider</option>
+              <option value="pension-fund">Pension Fund / AFORE / Sovereign Wealth Fund</option>
+              <option value="insurance">Insurance Company / Reinsurer</option>
+              <option value="corporate-large">Corporate — Large Cap ($1B+ Revenue)</option>
+              <option value="corporate-mid">Corporate — Mid Market ($100M–$1B Revenue)</option>
+              <option value="sofom-sofipo">SOFOM / SOFIPO / Non-bank Lender</option>
+              <option value="family-office">Family Office / UHNW Advisor</option>
+              <option value="exchange-ccp">Exchange / CCP / Market Infrastructure</option>
+              <option value="fintech">Fintech / DeFi / Crypto Platform</option>
+              <option value="regulator">Regulator / Central Bank / Government</option>
+              <option value="consulting">Big Consulting Firm / Advisory</option>
+              <option value="legal">Law Firm / Legal Advisory</option>
+              <option value="audit-accounting">Audit / Accounting Firm (Big 4)</option>
+              <option value="technology">Technology / Market Data / Systems Vendor</option>
+              <option value="academic">Academic / Research Institution</option>
+              <option value="independent">Independent Professional / Consultant</option>
+              <option value="other">Other</option>
             </select>
           </div>
-          <div><label class="rm-lb">WhatsApp</label><input class="rm-in" id="rm-whatsapp" name="whatsapp" type="tel" required></div>
+
+          <div class="form-group">
+            <label for="interest">Primary Interest</label>
+            <select id="interest" name="interest">
+              <option value="" disabled selected>¿Qué buscas?</option>
+              <option value="individual">Inscripción individual</option>
+              <option value="corporate">Licencia corporativa (5+ participantes)</option>
+              <option value="info">Solo quiero más información</option>
+              <option value="modules">Me interesa(n) módulo(s) específico(s)</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn-submit">
+            Solicitar información →
+          </button>
+
+          <div class="form-secure">
+            🔒 Tu información está protegida y no será compartida con terceros.
+          </div>
+        </form>
+
+        <div class="form-success">
+          <div class="check-circle">✓</div>
+          <h3>¡Solicitud enviada!</h3>
+          <p>Nuestro equipo te contactará en las próximas 24 horas con toda la información del programa GFDS™.</p>
         </div>
-        <label style="display:flex;align-items:flex-start;gap:10px;font-size:11.5px;color:#5a6577;font-family:'Lora',Georgia,serif;line-height:1.55;cursor:pointer;margin-top:2px;">
-          <input type="checkbox" name="privacidad" required style="margin-top:2px;width:14px;height:14px;flex:none;cursor:pointer;accent-color:#1b2430;">
-          <span>He leído y acepto el <a href="https://riskmathics.com/avisoprivacidad" target="_blank" rel="noopener" style="color:#1b2430;font-weight:600;text-decoration:underline;text-underline-offset:2px;">Aviso de Privacidad</a> y autorizo el tratamiento de mis datos y ser contactado por RiskMathics.</span>
-        </label>
-        <button type="submit" style="background:#AF7D1F;color:#ffffff;font-weight:600;font-size:13px;letter-spacing:1.8px;text-transform:uppercase;border:none;padding:17px;border-radius:4px;cursor:pointer;font-family:'Poppins',Arial,sans-serif;margin-top:4px;">Quiero el temario</button>
-        <p style="font-size:10.5px;color:#9aa4b4;margin:0;text-align:center;font-family:'Poppins',Arial,sans-serif;letter-spacing:.4px;">Verificamos tu correo y tu teléfono con un código · Datos protegidos</p>
-      </form>
-      <div id="rm-verify" style="display:none;"></div>
-      <div id="rm-thanks" style="display:none;border:1px solid #b7e4c7;background:#f6fdf9;color:#1b4332;padding:22px;border-radius:6px;font-size:14.5px;font-family:'Lora',Georgia,serif;line-height:1.6;"><b>Listo.</b> Recibimos y verificamos tus datos. Te enviamos el temario a tu correo y un asesor te contactará.</div>
-      <div style="margin-top:34px;padding-top:28px;border-top:1px solid #edf0f5;text-align:center;">
-        <div style="font-size:10px;color:#93A0B4;letter-spacing:2.2px;font-family:'Poppins',Arial,sans-serif;">O INSCRÍBETE Y PAGA DIRECTO</div>
-        <div style="font-size:30px;font-weight:300;color:#1F3152;margin:14px 0 2px;font-family:'Poppins',Arial,sans-serif;letter-spacing:.5px;">USD $9,860</div>
-        <div style="font-size:11px;color:#9aa4b4;font-family:'Lora',Georgia,serif;font-style:italic;margin-bottom:18px;">IVA</div>
-        <div style="display:grid;gap:10px;">
-          <a id="rm-paypal" href="https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/paypal-pay?curso=globalderivatives" target="_blank" rel="noopener" style="background:#AF7D1F;color:#ffffff;font-weight:600;font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;padding:15px;border-radius:4px;text-decoration:none;white-space:nowrap;font-family:'Poppins',Arial,sans-serif;">Pagar con PayPal</a>
-          <a id="rm-stripe" href="https://buy.stripe.com/bJefZ9bzF7yMg772EN2Ry19" target="_blank" rel="noopener" style="background:transparent;border:1.5px solid #1F3152;color:#1F3152;font-weight:600;font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;padding:14px;border-radius:4px;text-decoration:none;white-space:nowrap;font-family:'Poppins',Arial,sans-serif;">Pagar con tarjeta · Stripe</a>
-        </div>
-        <p style="font-size:10px;color:#b3bcc9;margin-top:16px;font-family:'Poppins',Arial,sans-serif;letter-spacing:.5px;">100% seguro · SSL · PayPal Verified · RiskMathics Financial Institute</p>
       </div>
     </div>
   </div>
 </section>
-<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
-<script>
-const RM_CFG={id:"globalderivatives",folleto:"https://riskmathics-folletos-2026.s3.amazonaws.com/global-derivatives-2026.pdf",paypal:"https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/paypal-pay?curso=globalderivatives",stripe:"https://buy.stripe.com/bJefZ9bzF7yMg772EN2Ry19"};
-const RM_VURL="https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/verify-lead";
-const RM_VKEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJmZmRzZ3ZnY3Ztb2pvYmZpdWF5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUzOTQ0NzQsImV4cCI6MjA5MDk3MDQ3NH0.7VKn7st3POLRTLIXx9Y4gRjXbh8v_BKXblc7vFIVu-U";
-let RM_LEAD=null;var rmIti=null;
-(function(){var pp=document.getElementById('rm-paypal');if(pp&&!RM_CFG.paypal)pp.style.display='none';var sp=document.getElementById('rm-stripe');if(sp&&!RM_CFG.stripe)sp.style.display='none';
-var tel=document.getElementById('rm-whatsapp');var sel=document.querySelector('#rm-lead select[name=pais]');
-if(window.intlTelInput&&tel){rmIti=window.intlTelInput(tel,{initialCountry:"mx",preferredCountries:["mx","us","co","pe","cl","ar","es"],separateDialCode:true,utilsScript:"https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js"});
-if(sel){sel.addEventListener('change',function(){var o=sel.options[sel.selectedIndex];if(o&&o.dataset.iso&&rmIti)rmIti.setCountry(o.dataset.iso);});
-tel.addEventListener('countrychange',function(){if(!rmIti)return;var c=rmIti.getSelectedCountryData();for(var i=0;i<sel.options.length;i++){if((sel.options[i].dataset.iso||'')===c.iso2){sel.selectedIndex=i;break;}}});}}})();
-async function rmPost(p){const r=await fetch(RM_VURL,{method:"POST",headers:{"Content-Type":"application/json","apikey":RM_VKEY,"Authorization":"Bearer "+RM_VKEY},body:JSON.stringify(p)});return r.json();}
-async function rmSubmit(e){e.preventDefault();const f=e.target,d=Object.fromEntries(new FormData(f));if(!f.privacidad||!f.privacidad.checked){alert("Debes aceptar el Aviso de Privacidad para continuar.");return false;}
-let phone="";if(rmIti){try{phone=rmIti.getNumber()||"";}catch(_){phone="";}if(!phone){var dial="+"+((rmIti.getSelectedCountryData()||{}).dialCode||"52");var raw=(d.whatsapp||"").replace(/[\s\-()]/g,"");phone=raw.startsWith("+")?raw:dial+raw.replace(/^0+/,"");}}
-else{phone=(d.whatsapp||"").trim().replace(/[\s\-()]/g,"");if(phone&&!phone.startsWith("+"))phone="+52"+phone.replace(/^0+/,"");}
-if(!phone||phone.length<10){alert("Escribe tu WhatsApp completo.");return false;}
-d.phone=phone;d.apellido=((d.apellido_paterno||"")+" "+(d.apellido_materno||"")).trim();
-var so=f.pais&&f.pais.options[f.pais.selectedIndex];d.pais=(so&&so.text)||d.pais||"";d.pais_iso=((so&&so.dataset.iso)||"").toUpperCase();
-d.curso=RM_CFG.id;d.folleto=RM_CFG.folleto;d.privacidad=true;RM_LEAD=d;
-const b=f.querySelector('button[type=submit]');b.textContent="ENVIANDO CÓDIGOS...";b.disabled=true;let res;
-try{res=await rmPost({action:"start",phone:phone,email:d.email,privacidad:true});}catch(_){res={};}
-if(res&&res.ok){RM_LEAD.email_mode=res.email_mode||"fallback";f.style.display="none";rmShowCode(phone,d.email);}
-else{b.textContent="QUIERO EL TEMARIO";b.disabled=false;alert((res&&res.error)||"No pudimos enviar los códigos. Revisa tu correo y número.");}return false;}
-function rmShowCode(phone,email){var c=document.getElementById('rm-verify');c.innerHTML='<p style="margin:0 0 20px;font-size:14.5px;color:#1b2430;font-family:\'Lora\',Georgia,serif;line-height:1.6;">Te enviamos <b>dos códigos</b> para verificar tu identidad:</p><div style="margin-bottom:18px;"><label style="display:block;font-family:\'Poppins\',Arial,sans-serif;font-size:10px;letter-spacing:1.6px;font-weight:500;color:#93A0B4;text-transform:uppercase;margin-bottom:4px;">Código SMS · '+phone+'</label><input id="rm-otp" inputmode="numeric" style="width:100%;border:none;border-bottom:1px solid #dfe5ee;padding:9px 1px 10px;font-size:19px;letter-spacing:6px;font-family:\'Poppins\',Arial,sans-serif;color:#1b2430;outline:none;"></div><div style="margin-bottom:24px;"><label style="display:block;font-family:\'Poppins\',Arial,sans-serif;font-size:10px;letter-spacing:1.6px;font-weight:500;color:#93A0B4;text-transform:uppercase;margin-bottom:4px;">Código por correo · '+email+'</label><input id="rm-otp-email" inputmode="numeric" style="width:100%;border:none;border-bottom:1px solid #dfe5ee;padding:9px 1px 10px;font-size:19px;letter-spacing:6px;font-family:\'Poppins\',Arial,sans-serif;color:#1b2430;outline:none;"></div><button type="button" onclick="rmVerify()" style="width:100%;background:#AF7D1F;color:#ffffff;font-weight:600;font-size:13px;letter-spacing:1.8px;text-transform:uppercase;border:none;padding:16px;border-radius:4px;cursor:pointer;font-family:\'Poppins\',Arial,sans-serif;">Verificar y recibir temario</button><p id="rm-vmsg" style="font-size:11.5px;color:#9aa4b4;margin-top:10px;font-family:\'Lora\',Georgia,serif;"></p>';c.style.display="block";document.getElementById('rm-otp').focus();}
-async function rmVerify(){var code=(document.getElementById('rm-otp').value||"").trim();var ecode=(document.getElementById('rm-otp-email').value||"").trim();var m=document.getElementById('rm-vmsg');if(code.length<4||ecode.length<4){m.textContent="Escribe ambos códigos (SMS y correo).";return;}m.textContent="Verificando...";var res;
-try{res=await rmPost({action:"check",phone:RM_LEAD.phone,code:code,email:RM_LEAD.email,email_code:ecode,email_mode:RM_LEAD.email_mode,nombre:RM_LEAD.nombre,apellido:RM_LEAD.apellido,apellido_paterno:RM_LEAD.apellido_paterno,apellido_materno:RM_LEAD.apellido_materno,puesto:RM_LEAD.puesto,empresa:RM_LEAD.empresa,sector:RM_LEAD.sector,pais:RM_LEAD.pais,pais_iso:RM_LEAD.pais_iso,curso:RM_CFG.id,folleto:RM_CFG.folleto});}catch(_){res={};}
-if(res&&res.verified){document.getElementById('rm-verify').style.display="none";document.getElementById('rm-thanks').style.display="block";if(RM_CFG.folleto)window.open(RM_CFG.folleto,'_blank');}
-else if(res&&(res.phone_ok===false||res.email_ok===false)){m.textContent=(res.phone_ok===false?"Código SMS incorrecto. ":"")+(res.email_ok===false?"Código de correo incorrecto.":"")+" Intenta de nuevo.";}
-else{m.textContent="Códigos incorrectos o expirados. Intenta de nuevo.";}}
-</script>
-<!-- ===== /SALES MACHINE v3.2 ===== -->
-
-
-
 
 <!-- ════════════ ACRONYMS ════════════ -->
 <section class="acronyms-section">
   <div class="container">
     <span class="section-label">Glosario</span>
     <h2 class="display-md" style="margin-top: 0.5rem; font-size: 1.3rem;">Acrónimos utilizados en este programa</h2>
-    <div class="accent-line"></div>
     <div class="acronyms-grid">
       <div class="acronym-item"><strong>ALM</strong> — Asset-Liability Management</div>
       <div class="acronym-item"><strong>ASC</strong> — Accounting Standards Codification</div>
@@ -2032,7 +2378,7 @@ else{m.textContent="Códigos incorrectos o expirados. Intenta de nuevo.";}}
   <div class="container">
     <div class="footer-inner">
       <div class="footer-brand">
-        <span class="footer-logo" style="font-family:'Poppins',sans-serif;font-weight:800;font-size:1.05rem;color:#fff;letter-spacing:.05em;height:auto">RISK<span style="color:var(--gold)">MATHICS</span></span>
+        <img src="Logo_riskmathics_3D.PNG" alt="RiskMathics" class="footer-logo">
         <span class="footer-text">© 2026 RiskMathics Financial Innovation Institute. Todos los derechos reservados.</span>
       </div>
       <div class="footer-links">
@@ -2117,5 +2463,140 @@ window.addEventListener('scroll', () => {
 });
 </script>
 
+<!-- ===== RISKMATHICS SALES MACHINE v3.2 (inyectable) ===== -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+<style>
+  #rm-enroll .iti{width:100%;}
+  #rm-enroll .iti__selected-flag{background:transparent;padding-left:0;}
+  #rm-enroll input,#rm-enroll select{outline:none;background:transparent;}
+  #rm-enroll .rm-in{width:100%;border:none;border-bottom:1px solid #dfe5ee;border-radius:0;padding:9px 1px 10px;font-size:15px;font-family:'Lora',Georgia,serif;color:#1b2430;transition:border-color .18s;}
+  #rm-enroll .rm-in:focus{border-bottom-color:#8f9bb0;}
+  #rm-enroll .rm-in::placeholder{color:#b7c0cd;}
+  #rm-enroll .rm-lb{display:block;font-family:'Poppins',Arial,sans-serif;font-size:10px;letter-spacing:1.6px;font-weight:500;color:#93A0B4;text-transform:uppercase;margin-bottom:2px;}
+  #rm-enroll select.rm-in{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%2393A0B4' stroke-width='1.4' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 4px center;padding-right:20px;}
+  @media (max-width:560px){#rm-enroll .rm-2col{grid-template-columns:1fr !important;}}
+</style>
+<section id="rm-enroll" style="background:linear-gradient(135deg,#12305c,#0a1f3c);color:#fff;padding:88px 22px;font-family:'Poppins',Arial,sans-serif;">
+  <div style="max-width:600px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:38px;">
+      <div style="color:#AF7D1F;letter-spacing:3px;font-size:10.5px;font-weight:500;">INSCRIPCIÓN · CUPO LIMITADO</div>
+      <h2 style="font-size:26px;margin:16px 0 0;font-weight:600;line-height:1.25;letter-spacing:.3px;">Asegura tu lugar</h2>
+      <div style="width:50px;height:2px;background:#AF7D1F;margin:18px auto;"></div>
+      <p style="color:#c2cee0;font-size:15px;margin:0;font-family:'Lora',Georgia,serif;font-style:italic;">Déjanos tus datos, verifica tu correo y tu WhatsApp,<br>y recibe el temario completo. Sin compromiso.</p>
+    </div>
+    <div style="background:#ffffff;color:#1b2430;border-radius:6px;padding:44px 42px;border:1px solid rgba(255,255,255,.14);box-shadow:0 2px 24px rgba(0,0,0,.16);">
+      <form id="rm-lead" onsubmit="return rmSubmit(event)" style="display:grid;gap:22px;">
+        <div><label class="rm-lb">Nombre(s)</label><input class="rm-in" name="nombre" required></div>
+        <div class="rm-2col" style="display:grid;grid-template-columns:1fr 1fr;gap:22px 20px;">
+          <div><label class="rm-lb">Apellido paterno</label><input class="rm-in" name="apellido_paterno" required></div>
+          <div><label class="rm-lb">Apellido materno</label><input class="rm-in" name="apellido_materno"></div>
+        </div>
+        <div><label class="rm-lb">Email corporativo</label><input class="rm-in" type="email" name="email" required></div>
+        <div class="rm-2col" style="display:grid;grid-template-columns:1fr 1fr;gap:22px 20px;">
+          <div><label class="rm-lb">Puesto</label><input class="rm-in" name="puesto" required></div>
+          <div><label class="rm-lb">Institución / Empresa</label><input class="rm-in" name="empresa" required></div>
+        </div>
+        <div><label class="rm-lb">Sector financiero / industria</label>
+          <select class="rm-in" name="sector" required>
+            <option value="" disabled selected></option>
+            <option>AFORE / Fondos de Pensión</option>
+            <option>Aseguradora / Insurance</option>
+            <option>Banca</option>
+            <option>Casa de Bolsa / Broker Dealer</option>
+            <option>Asset Manager</option>
+            <option>Hedge Fund</option>
+            <option>Family Office</option>
+            <option>Corporativo</option>
+            <option>PyME</option>
+            <option>Gobierno</option>
+            <option>Energía</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div class="rm-2col" style="display:grid;grid-template-columns:1fr 1fr;gap:22px 20px;">
+          <div><label class="rm-lb">País</label>
+            <select class="rm-in" name="pais" required>
+              <option value="" disabled data-iso=""></option>
+              <option data-iso="mx" selected>México</option>
+              <option data-iso="us">Estados Unidos</option>
+              <option data-iso="es">España</option>
+              <option data-iso="co">Colombia</option>
+              <option data-iso="pe">Perú</option>
+              <option data-iso="cl">Chile</option>
+              <option data-iso="ar">Argentina</option>
+              <option data-iso="ec">Ecuador</option>
+              <option data-iso="gt">Guatemala</option>
+              <option data-iso="pa">Panamá</option>
+              <option data-iso="cr">Costa Rica</option>
+              <option data-iso="do">República Dominicana</option>
+              <option data-iso="bo">Bolivia</option>
+              <option data-iso="uy">Uruguay</option>
+              <option data-iso="py">Paraguay</option>
+              <option data-iso="ve">Venezuela</option>
+              <option data-iso="hn">Honduras</option>
+              <option data-iso="sv">El Salvador</option>
+              <option data-iso="ni">Nicaragua</option>
+              <option data-iso="br">Brasil</option>
+              <option data-iso="ca">Canadá</option>
+              <option data-iso="">Otro</option>
+            </select>
+          </div>
+          <div><label class="rm-lb">WhatsApp</label><input class="rm-in" id="rm-whatsapp" name="whatsapp" type="tel" required></div>
+        </div>
+        <label style="display:flex;align-items:flex-start;gap:10px;font-size:11.5px;color:#5a6577;font-family:'Lora',Georgia,serif;line-height:1.55;cursor:pointer;margin-top:2px;">
+          <input type="checkbox" name="privacidad" required style="margin-top:2px;width:14px;height:14px;flex:none;cursor:pointer;accent-color:#1b2430;">
+          <span>He leído y acepto el <a href="https://riskmathics.com/avisoprivacidad" target="_blank" rel="noopener" style="color:#1b2430;font-weight:600;text-decoration:underline;text-underline-offset:2px;">Aviso de Privacidad</a> y autorizo el tratamiento de mis datos y ser contactado por RiskMathics.</span>
+        </label>
+        <button type="submit" style="background:#AF7D1F;color:#ffffff;font-weight:600;font-size:13px;letter-spacing:1.8px;text-transform:uppercase;border:none;padding:17px;border-radius:4px;cursor:pointer;font-family:'Poppins',Arial,sans-serif;margin-top:4px;">Quiero el temario</button>
+        <p style="font-size:10.5px;color:#9aa4b4;margin:0;text-align:center;font-family:'Poppins',Arial,sans-serif;letter-spacing:.4px;">Verificamos tu correo y tu teléfono con un código · Datos protegidos</p>
+      </form>
+      <div id="rm-verify" style="display:none;"></div>
+      <div id="rm-thanks" style="display:none;border:1px solid #b7e4c7;background:#f6fdf9;color:#1b4332;padding:22px;border-radius:6px;font-size:14.5px;font-family:'Lora',Georgia,serif;line-height:1.6;"><b>Listo.</b> Recibimos y verificamos tus datos. Te enviamos el temario a tu correo y un asesor te contactará.</div>
+      <div style="margin-top:34px;padding-top:28px;border-top:1px solid #edf0f5;text-align:center;">
+        <div style="font-size:10px;color:#93A0B4;letter-spacing:2.2px;font-family:'Poppins',Arial,sans-serif;">O INSCRÍBETE Y PAGA DIRECTO</div>
+        <div style="font-size:30px;font-weight:300;color:#0a1f3c;margin:14px 0 2px;font-family:'Poppins',Arial,sans-serif;letter-spacing:.5px;">USD $9,860</div>
+        <div style="font-size:11px;color:#9aa4b4;font-family:'Lora',Georgia,serif;font-style:italic;margin-bottom:18px;">IVA incluido</div>
+        <div style="display:grid;gap:10px;">
+          <a id="rm-paypal" href="https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/paypal-pay?curso=globalderivatives" target="_blank" rel="noopener" style="background:#AF7D1F;color:#ffffff;font-weight:600;font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;padding:15px;border-radius:4px;text-decoration:none;white-space:nowrap;font-family:'Poppins',Arial,sans-serif;">Pagar con PayPal</a>
+          <a id="rm-stripe" href="https://buy.stripe.com/bJefZ9bzF7yMg772EN2Ry19" target="_blank" rel="noopener" style="background:transparent;border:1.5px solid #0a1f3c;color:#0a1f3c;font-weight:600;font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;padding:14px;border-radius:4px;text-decoration:none;white-space:nowrap;font-family:'Poppins',Arial,sans-serif;">Pagar con tarjeta · Stripe</a>
+        </div>
+        <p style="font-size:10px;color:#b3bcc9;margin-top:16px;font-family:'Poppins',Arial,sans-serif;letter-spacing:.5px;">100% seguro · SSL · PayPal Verified · RiskMathics Financial Institute</p>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+<script>
+const RM_CFG={id:"globalderivatives",folleto:"https://riskmathics-folletos-2026.s3.amazonaws.com/global-derivatives-2026.pdf",paypal:"https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/paypal-pay?curso=globalderivatives",stripe:"https://buy.stripe.com/bJefZ9bzF7yMg772EN2Ry19"};
+const RM_VURL="https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/verify-lead";
+const RM_VKEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJmZmRzZ3ZnY3Ztb2pvYmZpdWF5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUzOTQ0NzQsImV4cCI6MjA5MDk3MDQ3NH0.7VKn7st3POLRTLIXx9Y4gRjXbh8v_BKXblc7vFIVu-U";
+let RM_LEAD=null;var rmIti=null;
+(function(){var pp=document.getElementById('rm-paypal');if(pp&&!RM_CFG.paypal)pp.style.display='none';var sp=document.getElementById('rm-stripe');if(sp&&!RM_CFG.stripe)sp.style.display='none';
+var tel=document.getElementById('rm-whatsapp');var sel=document.querySelector('#rm-lead select[name=pais]');
+if(window.intlTelInput&&tel){rmIti=window.intlTelInput(tel,{initialCountry:"mx",preferredCountries:["mx","us","co","pe","cl","ar","es"],separateDialCode:true,utilsScript:"https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js"});
+if(sel){sel.addEventListener('change',function(){var o=sel.options[sel.selectedIndex];if(o&&o.dataset.iso&&rmIti)rmIti.setCountry(o.dataset.iso);});
+tel.addEventListener('countrychange',function(){if(!rmIti)return;var c=rmIti.getSelectedCountryData();for(var i=0;i<sel.options.length;i++){if((sel.options[i].dataset.iso||'')===c.iso2){sel.selectedIndex=i;break;}}});}}})();
+async function rmPost(p){const r=await fetch(RM_VURL,{method:"POST",headers:{"Content-Type":"application/json","apikey":RM_VKEY,"Authorization":"Bearer "+RM_VKEY},body:JSON.stringify(p)});return r.json();}
+async function rmSubmit(e){e.preventDefault();const f=e.target,d=Object.fromEntries(new FormData(f));if(!f.privacidad||!f.privacidad.checked){alert("Debes aceptar el Aviso de Privacidad para continuar.");return false;}
+let phone="";if(rmIti){try{phone=rmIti.getNumber()||"";}catch(_){phone="";}if(!phone){var dial="+"+((rmIti.getSelectedCountryData()||{}).dialCode||"52");var raw=(d.whatsapp||"").replace(/[\s\-()]/g,"");phone=raw.startsWith("+")?raw:dial+raw.replace(/^0+/,"");}}
+else{phone=(d.whatsapp||"").trim().replace(/[\s\-()]/g,"");if(phone&&!phone.startsWith("+"))phone="+52"+phone.replace(/^0+/,"");}
+if(!phone||phone.length<10){alert("Escribe tu WhatsApp completo.");return false;}
+d.phone=phone;d.apellido=((d.apellido_paterno||"")+" "+(d.apellido_materno||"")).trim();
+var so=f.pais&&f.pais.options[f.pais.selectedIndex];d.pais=(so&&so.text)||d.pais||"";d.pais_iso=((so&&so.dataset.iso)||"").toUpperCase();
+d.curso=RM_CFG.id;d.folleto=RM_CFG.folleto;d.privacidad=true;RM_LEAD=d;
+const b=f.querySelector('button[type=submit]');b.textContent="ENVIANDO CÓDIGOS...";b.disabled=true;let res;
+try{res=await rmPost({action:"start",phone:phone,email:d.email,privacidad:true});}catch(_){res={};}
+if(res&&res.ok){RM_LEAD.email_mode=res.email_mode||"fallback";f.style.display="none";rmShowCode(phone,d.email);}
+else{b.textContent="QUIERO EL TEMARIO";b.disabled=false;alert((res&&res.error)||"No pudimos enviar los códigos. Revisa tu correo y número.");}return false;}
+function rmShowCode(phone,email){var c=document.getElementById('rm-verify');c.innerHTML='<p style="margin:0 0 20px;font-size:14.5px;color:#1b2430;font-family:\'Lora\',Georgia,serif;line-height:1.6;">Te enviamos <b>dos códigos</b> para verificar tu identidad:</p><div style="margin-bottom:18px;"><label style="display:block;font-family:\'Poppins\',Arial,sans-serif;font-size:10px;letter-spacing:1.6px;font-weight:500;color:#93A0B4;text-transform:uppercase;margin-bottom:4px;">Código SMS · '+phone+'</label><input id="rm-otp" inputmode="numeric" style="width:100%;border:none;border-bottom:1px solid #dfe5ee;padding:9px 1px 10px;font-size:19px;letter-spacing:6px;font-family:\'Poppins\',Arial,sans-serif;color:#1b2430;outline:none;"></div><div style="margin-bottom:24px;"><label style="display:block;font-family:\'Poppins\',Arial,sans-serif;font-size:10px;letter-spacing:1.6px;font-weight:500;color:#93A0B4;text-transform:uppercase;margin-bottom:4px;">Código por correo · '+email+'</label><input id="rm-otp-email" inputmode="numeric" style="width:100%;border:none;border-bottom:1px solid #dfe5ee;padding:9px 1px 10px;font-size:19px;letter-spacing:6px;font-family:\'Poppins\',Arial,sans-serif;color:#1b2430;outline:none;"></div><button type="button" onclick="rmVerify()" style="width:100%;background:#AF7D1F;color:#ffffff;font-weight:600;font-size:13px;letter-spacing:1.8px;text-transform:uppercase;border:none;padding:16px;border-radius:4px;cursor:pointer;font-family:\'Poppins\',Arial,sans-serif;">Verificar y recibir temario</button><p id="rm-vmsg" style="font-size:11.5px;color:#9aa4b4;margin-top:10px;font-family:\'Lora\',Georgia,serif;"></p>';c.style.display="block";document.getElementById('rm-otp').focus();}
+async function rmVerify(){var code=(document.getElementById('rm-otp').value||"").trim();var ecode=(document.getElementById('rm-otp-email').value||"").trim();var m=document.getElementById('rm-vmsg');if(code.length<4||ecode.length<4){m.textContent="Escribe ambos códigos (SMS y correo).";return;}m.textContent="Verificando...";var res;
+try{res=await rmPost({action:"check",phone:RM_LEAD.phone,code:code,email:RM_LEAD.email,email_code:ecode,email_mode:RM_LEAD.email_mode,nombre:RM_LEAD.nombre,apellido:RM_LEAD.apellido,apellido_paterno:RM_LEAD.apellido_paterno,apellido_materno:RM_LEAD.apellido_materno,puesto:RM_LEAD.puesto,empresa:RM_LEAD.empresa,sector:RM_LEAD.sector,pais:RM_LEAD.pais,pais_iso:RM_LEAD.pais_iso,curso:RM_CFG.id,folleto:RM_CFG.folleto});}catch(_){res={};}
+if(res&&res.verified){document.getElementById('rm-verify').style.display="none";document.getElementById('rm-thanks').style.display="block";if(RM_CFG.folleto)window.open(RM_CFG.folleto,'_blank');}
+else if(res&&(res.phone_ok===false||res.email_ok===false)){m.textContent=(res.phone_ok===false?"Código SMS incorrecto. ":"")+(res.email_ok===false?"Código de correo incorrecto.":"")+" Intenta de nuevo.";}
+else{m.textContent="Códigos incorrectos o expirados. Intenta de nuevo.";}}
+</script>
+<!-- ===== /SALES MACHINE v3.2 ===== -->
+
+<a href="#rm-enroll" style="position:fixed;bottom:22px;right:22px;z-index:99999;background:#AF7D1F;color:#ffffff;font-family:'Poppins',Arial,sans-serif;font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;padding:14px 26px;border-radius:50px;text-decoration:none;box-shadow:0 10px 34px rgba(0,0,0,.32);">Inscríbete &rarr;</a>
 </body>
 </html>
