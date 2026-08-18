@@ -17,23 +17,23 @@
  ═══════════════════════════════════════════════ */
 :root {
  /* ── Brand palette extracted from cover image ── */
- --navy: #0d1b40;
- --navy-deep: #040718;
- --navy-mid: #0f2247;
- --accent: #579be6; /* steel-blue accent line */
- --accent-dark: #3d7ec8;
- --accent-glow: #6db0f7;
- --accent-soft: #a0b3d3; /* "Executive Program" color */
+ --navy: #0C1637;
+ --navy-deep: #04081C;
+ --navy-mid: #081E41;
+ --accent: #559BE6; /* steel-blue accent line */
+ --accent-dark: #7FB4F0;
+ --accent-glow: #AFC3E1;
+ --accent-soft: #AFC3E1; /* "Executive Program" color */
  --gold: #c8a45a;
  --gold-light: #dfc07e;
- --ivory: #F4F5F8;
- --ivory-warm: #F8F9FB;
+ --ivory: #04081C;
+ --ivory-warm: #0C1637;
  --slate: #2C3E50;
  --slate-light: #7386a7;
  --white: #FFFFFF;
- --text-primary: #1A2A3A;
- --text-secondary: #5A6B7D;
- --border-subtle: rgba(0,0,0,0.06);
+ --text-primary: #FFFFFF;
+ --text-secondary: #AFC3E1;
+ --border-subtle: rgba(255,255,255,.10);
  --shadow-sm: 0 2px 8px rgba(4,7,24,0.06);
  --shadow-md: 0 8px 32px rgba(4,7,24,0.12);
  --shadow-lg: 0 16px 64px rgba(4,7,24,0.18);
@@ -391,7 +391,7 @@ section {
 
 /* Hero sidebar, key facts card */
 .hero-sidebar {
- background: rgba(255,255,255,0.04);
+ background: #0C1637;
  border: 1px solid rgba(255,255,255,0.08);
  border-radius: var(--radius-lg);
  padding: 2.5rem;
@@ -543,7 +543,7 @@ section {
  font-family: 'Poppins', sans-serif;
  font-size: 1.6rem;
  font-weight: 800;
- color: var(--navy);
+ color: #FFFFFF;
  letter-spacing: -0.02em;
 }
 
@@ -588,7 +588,7 @@ section {
 }
 
 .highlight-card {
- background: rgba(255,255,255,0.03);
+ background: #0C1637;
  border: 1px solid rgba(255,255,255,0.06);
  border-radius: var(--radius-md);
  padding: 2rem;
@@ -653,7 +653,7 @@ section {
 
 .audience-card h4 {
  font-size: 0.95rem;
- color: var(--navy);
+ color: #FFFFFF;
  margin-bottom: 0.5rem;
 }
 
@@ -701,7 +701,7 @@ section {
 
 .phase-header h3 {
  font-size: 1.1rem;
- color: var(--navy);
+ color: #FFFFFF;
 }
 
 .module-card {
@@ -737,7 +737,7 @@ section {
 
 .module-info h4 {
  font-size: 0.95rem;
- color: var(--navy);
+ color: #FFFFFF;
  line-height: 1.35;
  margin-bottom: 0.15rem;
 }
@@ -804,7 +804,7 @@ section {
  font-family: 'Poppins', sans-serif;
  font-size: 0.78rem;
  font-weight: 600;
- color: var(--navy);
+ color: #FFFFFF;
  margin-bottom: 0.75rem;
  text-transform: uppercase;
  letter-spacing: 0.08em;
@@ -891,7 +891,7 @@ section {
  font-family: 'Poppins', sans-serif;
  font-size: 0.85rem;
  font-weight: 600;
- color: var(--navy);
+ color: #FFFFFF;
 }
 
 /* ─── METHODOLOGY ─── */
@@ -910,7 +910,7 @@ section {
 .method-card {
  text-align: center;
  padding: 2.5rem 2rem;
- background: rgba(255,255,255,0.03);
+ background: #0C1637;
  border: 1px solid rgba(255,255,255,0.06);
  border-radius: var(--radius-lg);
 }
@@ -953,7 +953,7 @@ section {
 
 .latam-card h4 {
  font-size: 1rem;
- color: var(--navy);
+ color: #FFFFFF;
  margin-bottom: 0.5rem;
  display: flex;
  align-items: center;
@@ -1026,7 +1026,7 @@ section {
 }
 
 .form-right {
- background: rgba(255,255,255,0.04);
+ background: #0C1637;
  border: 1px solid rgba(255,255,255,0.08);
  border-radius: var(--radius-lg);
  padding: 2.5rem;
@@ -1070,7 +1070,7 @@ section {
 .form-group select {
  width: 100%;
  padding: 0.8rem 1rem;
- background: rgba(255,255,255,0.06);
+ background: #0C1637;
  border: 1px solid rgba(255,255,255,0.1);
  border-radius: var(--radius-sm);
  color: var(--white);
@@ -1204,7 +1204,7 @@ section {
 }
 
 .acronym-item strong {
- color: var(--navy);
+ color: #FFFFFF;
  font-weight: 600;
 }
 
@@ -1396,7 +1396,7 @@ section {
 <section class="abstract-section" id="abstract">
  <div class="container">
  <span class="section-label">Abstract ejecutivo</span>
- <h2 class="display-md" style="margin-top: 0.75rem; color: var(--navy);">
+ <h2 class="display-md" style="margin-top: 0.75rem; color: #FFFFFF;">
  Por qué este programa existe
  </h2>
 
@@ -2466,22 +2466,81 @@ window.addEventListener('scroll', () => {
  #rm-enroll .iti{width:100%;}
  #rm-enroll .iti__selected-flag{background:transparent;padding-left:0;}
  #rm-enroll input,#rm-enroll select{outline:none;background:transparent;}
- #rm-enroll .rm-in{width:100%;border:none;border-bottom:1px solid #dfe5ee;border-radius:0;padding:9px 1px 10px;font-size:15px;font-family:'Lora',Georgia,serif;color:#1b2430;transition:border-color .18s;}
+ #rm-enroll .rm-in{width:100%;border:none;border-bottom:1px solid #152A4C;border-radius:0;padding:9px 1px 10px;font-size:15px;font-family:'Lora',Georgia,serif;color:#FFFFFF;transition:border-color .18s;}
  #rm-enroll .rm-in:focus{border-bottom-color:#8f9bb0;}
  #rm-enroll .rm-in::placeholder{color:#b7c0cd;}
- #rm-enroll .rm-lb{display:block;font-family:'Poppins',Arial,sans-serif;font-size:10px;letter-spacing:1.6px;font-weight:500;color:#93A0B4;text-transform:uppercase;margin-bottom:2px;}
+ #rm-enroll .rm-lb{display:block;font-family:'Poppins',Arial,sans-serif;font-size:10px;letter-spacing:1.6px;font-weight:500;color:#AFC3E1;text-transform:uppercase;margin-bottom:2px;}
  #rm-enroll select.rm-in{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%2393A0B4' stroke-width='1.4' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 4px center;padding-right:20px;}
  @media (max-width:560px){#rm-enroll .rm-2col{grid-template-columns:1fr !important;}}
+
+/* ===== identidad RiskMathics: paleta oficial (finance) ===== */
+body{background:#04081C !important;color:#FFFFFF}
+h1,h2,h3,h4,h5,h6,.display-md,.display-lg,.sec-title,.module-title{color:#FFFFFF !important}
+p,li,td,dd{color:#AFC3E1}
+b,strong{color:#FFFFFF}
+a{color:#559BE6}
+.section-label,.kicker,.eyebrow{color:#559BE6 !important}
+.abstract-section,.sector-chip,.module-card,.faculty-card,.card,.panel,.audience-card,
+.pricing-card,.bundle-card,.fc,.f,.hl,.temario-section,.cta-section,.faq-section{
+ background:#0C1637 !important;border-color:#152A4C !important}
+.audience-card h3,.audience-card h4,.card h3,.card h4{color:#FFFFFF !important}
+.audience-card p,.card p,.fc p{color:#AFC3E1 !important}
+table,th,td{border-color:#152A4C !important}
+th{background:#0C1637 !important;color:#AFC3E1 !important}
+input,select,textarea{background:transparent;color:#FFFFFF;border-color:#152A4C}
+.rule,.line,.sep,.accent-line{width:50px !important;height:2px !important;background:#559BE6 !important}
+.iti__country-list,.iti__dropdown-content{background:#0C1637 !important;border-color:#152A4C !important}
+.iti__country-name{color:#FFFFFF !important}
+.iti__dial-code,.iti__selected-dial-code,.iti__selected-country{color:#AFC3E1 !important}
+.iti__country:hover,.iti__country.iti__highlight,.iti__active{background:#081E41 !important}
+.iti__search-input{background:#04081C !important;color:#FFFFFF !important;border-color:#152A4C !important}
+#rm-stripe{background:#559BE6 !important;color:#FFFFFF !important}
+#rm-paypal{background:transparent !important;color:#559BE6 !important;border:1.5px solid #559BE6 !important}
+#rm-enroll a[href*="privacidad"],#rm-enroll a[href*="aviso"]{color:#AFC3E1 !important;text-decoration:underline}
+.tw-scroll{display:block;width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tw-scroll table{min-width:520px}
+@media(max-width:700px){
+ html,body{max-width:100%;overflow-x:hidden}
+ a,span,div,p,h1,h2,h3,h4{max-width:100%;overflow-wrap:break-word;word-break:break-word}
+ [style*="white-space:nowrap"]{white-space:normal !important}
+ .tw-scroll table{min-width:480px}
+}
+
+h1,h2,h3,h4,h5,h6{color:#FFFFFF !important}
+.btn-primary,.btn.btn-primary,#rm-stripe{background:#559BE6 !important;color:#04081C !important;border-color:#559BE6 !important}
+#rm-paypal{background:transparent !important;color:#559BE6 !important;border:1.5px solid #559BE6 !important}
+.phase-tag,.badge,.tag,.chip{color:#04081C !important}
+[style*="background:#fff"],[style*="background:#FFF"],[style*="background:#ffffff"],
+[style*="background-color:#fff"],[style*="background:white"]{background:#0C1637 !important}
+.audience-section,.audience-card,.card{background:#0C1637 !important}
+.audience-card h3,.audience-card h4,.card h3{color:#FFFFFF !important}
+.audience-card p,.card p{color:#AFC3E1 !important}
+
+/* utilidades de Tailwind y tarjetas con clase propia */
+.bg-white,.bg-rm-card,.bg-rm-sand,.bg-gray-50,.bg-gray-100,.bg-slate-50,
+.level-card,.latam-card,.faculty-section,.mod,.card-white{background:#0C1637 !important}
+.border,.border-rm-sand,.border-gray-200,.border-slate-200{border-color:#152A4C !important}
+.text-rm-ink,.text-gray-900,.text-slate-900,.text-black{color:#FFFFFF !important}
+.text-gray-600,.text-gray-700,.text-slate-600{color:#AFC3E1 !important}
+.bg-white h1,.bg-white h2,.bg-white h3,.bg-white h4,.bg-rm-card h3,.bg-rm-card h4,
+.level-card h3,.level-card h4,.latam-card h3{color:#FFFFFF !important}
+.bg-white p,.bg-white li,.bg-rm-card p,.bg-rm-card li,.level-card p,.latam-card p{color:#AFC3E1 !important}
+/* texto muy oscuro sobre panel oscuro */
+[style*="color:#559BE6"],[style*="color:#559BE6"]{color:#559BE6 !important}
+[style*="color:#04081C"]{color:#FFFFFF !important}
+[style*="background:#559BE6"],[style*="background-color:#559BE6"],.btn-primary,#rm-stripe,.badge,.tag{color:#04081C !important}
+
+.btn-header-cta,.btn-primary,#rm-stripe,.badge,.tag{color:#04081C !important}
 </style>
-<section id="rm-enroll" style="background:linear-gradient(135deg,#12305c,#0a1f3c);color:#fff;padding:88px 22px;font-family:'Poppins',Arial,sans-serif;">
+<section id="rm-enroll" style="background:linear-gradient(135deg,#12305c,#04081C);color:#fff;padding:88px 22px;font-family:'Poppins',Arial,sans-serif;">
  <div style="max-width:600px;margin:0 auto;">
  <div style="text-align:center;margin-bottom:38px;">
  <div style="color:#AF7D1F;letter-spacing:3px;font-size:10.5px;font-weight:500;">INSCRIPCIÓN · CUPO LIMITADO</div>
  <h2 style="font-size:26px;margin:16px 0 0;font-weight:600;line-height:1.25;letter-spacing:.3px;">Asegura tu lugar</h2>
  <div style="width:50px;height:2px;background:#AF7D1F;margin:18px auto;"></div>
- <p style="color:#c2cee0;font-size:15px;margin:0;font-family:'Lora',Georgia,serif;font-style:italic;">Déjanos tus datos y verifica tu correo,<br>y recibe el temario completo. Sin compromiso.</p>
+ <p style="color:#AFC3E1;font-size:15px;margin:0;font-family:'Lora',Georgia,serif;font-style:italic;">Déjanos tus datos y verifica tu correo,<br>y recibe el temario completo. Sin compromiso.</p>
  </div>
- <div style="background:#ffffff;color:#1b2430;border-radius:6px;padding:44px 42px;border:1px solid rgba(255,255,255,.14);box-shadow:0 2px 24px rgba(0,0,0,.16);">
+ <div style="background:#0C1637;color:#FFFFFF;border-radius:6px;padding:44px 42px;border:1px solid rgba(255,255,255,.14);box-shadow:0 2px 24px rgba(0,0,0,.16);">
  <form id="rm-lead" onsubmit="return rmSubmit(event)" style="display:grid;gap:22px;">
  <div><label class="rm-lb">Nombre(s)</label><input class="rm-in" name="nombre" required></div>
  <div class="rm-2col" style="display:grid;grid-template-columns:1fr 1fr;gap:22px 20px;">
@@ -2495,7 +2554,7 @@ window.addEventListener('scroll', () => {
  <option value="grupo">Grupo o delegación</option>
  <option value="licencia_corporativa">Licencia / cohorte corporativa</option>
  </select>
- <small style="display:block;margin-top:7px;color:#93A0B4;font-family:'Lora',Georgia,serif;font-size:11.5px;">Para inscripción individual, empresa, puesto y sector son opcionales.</small>
+ <small style="display:block;margin-top:7px;color:#AFC3E1;font-family:'Lora',Georgia,serif;font-size:11.5px;">Para inscripción individual, empresa, puesto y sector son opcionales.</small>
  </div>
  <div><label class="rm-lb">Email corporativo o institucional</label><input class="rm-in" type="email" name="email" required></div>
  <div class="rm-2col" style="display:grid;grid-template-columns:1fr 1fr;gap:22px 20px;">
@@ -2549,25 +2608,25 @@ window.addEventListener('scroll', () => {
  </div>
  <div><label class="rm-lb">WhatsApp (opcional)</label><input class="rm-in" id="rm-whatsapp" name="whatsapp" type="tel"></div>
  </div>
- <label style="display:flex;align-items:flex-start;gap:10px;font-size:11.5px;color:#5a6577;font-family:'Lora',Georgia,serif;line-height:1.55;cursor:pointer;margin-top:2px;">
- <input type="checkbox" name="privacidad" required style="margin-top:2px;width:14px;height:14px;flex:none;cursor:pointer;accent-color:#1b2430;">
- <span>He leído y acepto el <a href="https://riskmathics.com/avisoprivacidad" target="_blank" rel="noopener" style="color:#1b2430;font-weight:600;text-decoration:underline;text-underline-offset:2px;">Aviso de Privacidad</a> y autorizo el tratamiento de mis datos y ser contactado por RiskMathics.</span>
+ <label style="display:flex;align-items:flex-start;gap:10px;font-size:11.5px;color:#8FA2BC;font-family:'Lora',Georgia,serif;line-height:1.55;cursor:pointer;margin-top:2px;">
+ <input type="checkbox" name="privacidad" required style="margin-top:2px;width:14px;height:14px;flex:none;cursor:pointer;accent-color:#0C1637;">
+ <span>He leído y acepto el <a href="https://riskmathics.com/avisoprivacidad" target="_blank" rel="noopener" style="color:#FFFFFF;font-weight:600;text-decoration:underline;text-underline-offset:2px;">Aviso de Privacidad</a> y autorizo el tratamiento de mis datos y ser contactado por RiskMathics.</span>
  </label>
  <button type="submit" style="background:#AF7D1F;color:#ffffff;font-weight:600;font-size:13px;letter-spacing:1.8px;text-transform:uppercase;border:none;padding:17px;border-radius:4px;cursor:pointer;font-family:'Poppins',Arial,sans-serif;margin-top:4px;">Quiero el temario</button>
- <p style="font-size:10.5px;color:#9aa4b4;margin:0;text-align:center;font-family:'Poppins',Arial,sans-serif;letter-spacing:.4px;">Te enviamos un código a tu correo · Datos protegidos</p>
+ <p style="font-size:10.5px;color:#AFC3E1;margin:0;text-align:center;font-family:'Poppins',Arial,sans-serif;letter-spacing:.4px;">Te enviamos un código a tu correo · Datos protegidos</p>
  </form>
  <div id="rm-verify" style="display:none;"></div>
- <div id="rm-thanks" style="display:none;border:1px solid #b7e4c7;background:#f6fdf9;color:#1b4332;padding:22px;border-radius:6px;font-size:14.5px;font-family:'Lora',Georgia,serif;line-height:1.6;"><b>Listo.</b> Recibimos y verificamos tu correo. Te enviamos el temario a tu correo y un asesor te contactará.</div>
+ <div id="rm-thanks" style="display:none;border:1px solid #b7e4c7;background:#0C1637;color:#1b4332;padding:22px;border-radius:6px;font-size:14.5px;font-family:'Lora',Georgia,serif;line-height:1.6;"><b>Listo.</b> Recibimos y verificamos tu correo. Te enviamos el temario a tu correo y un asesor te contactará.</div>
  <div style="margin-top:34px;padding-top:28px;border-top:1px solid #edf0f5;text-align:center;">
- <div style="font-size:10px;color:#93A0B4;letter-spacing:2.2px;font-family:'Poppins',Arial,sans-serif;">O INSCRÍBETE Y PAGA DIRECTO</div>
- <div style="font-size:30px;font-weight:300;color:#0a1f3c;margin:14px 0 2px;font-family:'Poppins',Arial,sans-serif;letter-spacing:.5px;">USD $8,500 + TAX</div>
- <div style="font-size:11px;color:#9aa4b4;font-family:'Lora',Georgia,serif;font-style:italic;margin-bottom:18px;">El costo no incluye impuestos</div>
+ <div style="font-size:10px;color:#AFC3E1;letter-spacing:2.2px;font-family:'Poppins',Arial,sans-serif;">O INSCRÍBETE Y PAGA DIRECTO</div>
+ <div style="font-size:30px;font-weight:300;color:#FFFFFF;margin:14px 0 2px;font-family:'Poppins',Arial,sans-serif;letter-spacing:.5px;">USD $8,500 + TAX</div>
+ <div style="font-size:11px;color:#AFC3E1;font-family:'Lora',Georgia,serif;font-style:italic;margin-bottom:18px;">El costo no incluye impuestos</div>
  <div style="display:grid;gap:10px;">
  <a id="rm-paypal" href="https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/paypal-pay?curso=globalderivatives" target="_blank" rel="noopener" style="background:#AF7D1F;color:#ffffff;font-weight:600;font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;padding:15px;border-radius:4px;text-decoration:none;white-space:nowrap;font-family:'Poppins',Arial,sans-serif;">Pagar con PayPal</a>
- <a id="rm-stripe" href="https://buy.stripe.com/cNi00b9rxcT65st5QZ2Rz3m" target="_blank" rel="noopener" style="background:transparent;border:1.5px solid #0a1f3c;color:#0a1f3c;font-weight:600;font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;padding:14px;border-radius:4px;text-decoration:none;white-space:nowrap;font-family:'Poppins',Arial,sans-serif;">Pagar con tarjeta · Stripe</a>
+ <a id="rm-stripe" href="https://buy.stripe.com/cNi00b9rxcT65st5QZ2Rz3m" target="_blank" rel="noopener" style="background:transparent;border:1.5px solid #04081C;color:#FFFFFF;font-weight:600;font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;padding:14px;border-radius:4px;text-decoration:none;white-space:nowrap;font-family:'Poppins',Arial,sans-serif;">Pagar con tarjeta · Stripe</a>
  </div>
  <p style="font-size:11px;color:#8fa2b8;margin-top:14px;font-family:'Lora',Georgia,serif;font-style:italic;">M&aacute;s de 100,000 profesionales formados en 25 a&ntilde;os &middot; BANXICO, CNBV, AFOREs y la banca de LATAM</p>
-<p style="font-size:10.5px;color:#9aa4b4;margin-top:6px;font-family:'Poppins',Arial,sans-serif;letter-spacing:.4px;">Meses sin intereses disponibles con PayPal</p>
+<p style="font-size:10.5px;color:#AFC3E1;margin-top:6px;font-family:'Poppins',Arial,sans-serif;letter-spacing:.4px;">Meses sin intereses disponibles con PayPal</p>
 <p style="font-size:10px;color:#b3bcc9;margin-top:16px;font-family:'Poppins',Arial,sans-serif;letter-spacing:.5px;">100% seguro · SSL · PayPal Verified · RiskMathics Financial Institute</p>
  </div>
  </div>
@@ -2599,22 +2658,22 @@ if(res&&res.ok){f.style.display="none";rmShowCode(d.email);}
 else{b.textContent=txt;b.disabled=false;alert((res&&res.error)||"No pudimos enviar el codigo. Escribenos a growth@riskmathics.com");}
 return false;}
 function rmCorporativo(c){var box=document.getElementById('rm-verify');
-box.innerHTML='<div style="border:1px solid #f0d9a8;background:#fffaf0;padding:22px;border-radius:6px;">'+
-'<p style="margin:0 0 14px;font-size:15px;color:#1b2430;font-family:\'Lora\',Georgia,serif;line-height:1.6;">Para enviarte el temario necesitamos tu <b>correo institucional o de empresa</b>.</p>'+
-'<p style="margin:0 0 18px;font-size:14px;color:#5a6577;font-family:\'Lora\',Georgia,serif;line-height:1.6;">Si no cuentas con uno, escribenos y con gusto te atendemos:</p>'+
+box.innerHTML='<div style="border:1px solid #f0d9a8;background:#0C1637;padding:22px;border-radius:6px;">'+
+'<p style="margin:0 0 14px;font-size:15px;color:#FFFFFF;font-family:\'Lora\',Georgia,serif;line-height:1.6;">Para enviarte el temario necesitamos tu <b>correo institucional o de empresa</b>.</p>'+
+'<p style="margin:0 0 18px;font-size:14px;color:#8FA2BC;font-family:\'Lora\',Georgia,serif;line-height:1.6;">Si no cuentas con uno, escribenos y con gusto te atendemos:</p>'+
 '<div style="display:grid;gap:10px;">'+
 '<a href="'+(c.whatsapp||"https://wa.me/525579894034")+'" target="_blank" rel="noopener" style="background:#25D366;color:#fff;font-weight:600;font-size:13px;letter-spacing:1px;text-transform:uppercase;padding:14px;border-radius:4px;text-decoration:none;text-align:center;font-family:\'Poppins\',Arial,sans-serif;">Escribenos por WhatsApp</a>'+
-'<a href="tel:'+(c.telefono||"+525579894034").replace(/\s/g,"")+'" style="border:1.5px solid #1b2430;color:#1b2430;font-weight:600;font-size:13px;letter-spacing:1px;text-transform:uppercase;padding:13px;border-radius:4px;text-decoration:none;text-align:center;font-family:\'Poppins\',Arial,sans-serif;">Llamar '+(c.whatsapp_texto||"+52 55 7989 4034")+'</a>'+
-'<a href="mailto:'+(c.correo||"growth@riskmathics.com")+'?subject=Informes%20'+encodeURIComponent(RM_CFG.id)+'" style="border:1.5px solid #dfe5ee;color:#5a6577;font-weight:600;font-size:12.5px;letter-spacing:1px;text-transform:uppercase;padding:13px;border-radius:4px;text-decoration:none;text-align:center;font-family:\'Poppins\',Arial,sans-serif;">'+(c.correo||"growth@riskmathics.com")+'</a>'+
-'</div><p style="margin:16px 0 0;font-size:12px;color:#9aa4b4;font-family:\'Lora\',Georgia,serif;font-style:italic;text-align:center;">O corrige tu correo arriba e intenta de nuevo.</p></div>';
+'<a href="tel:'+(c.telefono||"+525579894034").replace(/\s/g,"")+'" style="border:1.5px solid #0C1637;color:#FFFFFF;font-weight:600;font-size:13px;letter-spacing:1px;text-transform:uppercase;padding:13px;border-radius:4px;text-decoration:none;text-align:center;font-family:\'Poppins\',Arial,sans-serif;">Llamar '+(c.whatsapp_texto||"+52 55 7989 4034")+'</a>'+
+'<a href="mailto:'+(c.correo||"growth@riskmathics.com")+'?subject=Informes%20'+encodeURIComponent(RM_CFG.id)+'" style="border:1.5px solid #152A4C;color:#8FA2BC;font-weight:600;font-size:12.5px;letter-spacing:1px;text-transform:uppercase;padding:13px;border-radius:4px;text-decoration:none;text-align:center;font-family:\'Poppins\',Arial,sans-serif;">'+(c.correo||"growth@riskmathics.com")+'</a>'+
+'</div><p style="margin:16px 0 0;font-size:12px;color:#AFC3E1;font-family:\'Lora\',Georgia,serif;font-style:italic;text-align:center;">O corrige tu correo arriba e intenta de nuevo.</p></div>';
 box.style.display="block";box.scrollIntoView({behavior:"smooth",block:"center"});}
 function rmShowCode(email){var c=document.getElementById('rm-verify');
-c.innerHTML='<p style="margin:0 0 20px;font-size:14.5px;color:#1b2430;font-family:\'Lora\',Georgia,serif;line-height:1.6;">Te enviamos un <b>codigo</b> a <b>'+email+'</b>. Escribelo aqui para recibir tu temario:</p>'+
-'<div style="margin-bottom:24px;"><label style="display:block;font-family:\'Poppins\',Arial,sans-serif;font-size:10px;letter-spacing:1.6px;font-weight:500;color:#93A0B4;text-transform:uppercase;margin-bottom:4px;">Codigo de 6 digitos</label>'+
-'<input id="rm-otp-email" inputmode="numeric" maxlength="6" style="width:100%;border:none;border-bottom:1px solid #dfe5ee;padding:9px 1px 10px;font-size:22px;letter-spacing:8px;font-family:\'Poppins\',Arial,sans-serif;color:#1b2430;outline:none;"></div>'+
-'<button type="button" onclick="rmVerify()" style="width:100%;background:#0a1f3c;color:#ffffff;font-weight:600;font-size:13px;letter-spacing:1.8px;text-transform:uppercase;border:none;padding:16px;border-radius:4px;cursor:pointer;font-family:\'Poppins\',Arial,sans-serif;">Verificar y recibir temario</button>'+
-'<p id="rm-vmsg" style="font-size:11.5px;color:#9aa4b4;margin-top:10px;font-family:\'Lora\',Georgia,serif;"></p>'+
-'<p style="font-size:11.5px;color:#9aa4b4;margin-top:14px;font-family:\'Lora\',Georgia,serif;">No te llego? Revisa tu bandeja de no deseados o escribenos a <a href="mailto:growth@riskmathics.com" style="color:#0a1f3c;">growth@riskmathics.com</a></p>';
+c.innerHTML='<p style="margin:0 0 20px;font-size:14.5px;color:#FFFFFF;font-family:\'Lora\',Georgia,serif;line-height:1.6;">Te enviamos un <b>codigo</b> a <b>'+email+'</b>. Escribelo aqui para recibir tu temario:</p>'+
+'<div style="margin-bottom:24px;"><label style="display:block;font-family:\'Poppins\',Arial,sans-serif;font-size:10px;letter-spacing:1.6px;font-weight:500;color:#AFC3E1;text-transform:uppercase;margin-bottom:4px;">Codigo de 6 digitos</label>'+
+'<input id="rm-otp-email" inputmode="numeric" maxlength="6" style="width:100%;border:none;border-bottom:1px solid #152A4C;padding:9px 1px 10px;font-size:22px;letter-spacing:8px;font-family:\'Poppins\',Arial,sans-serif;color:#FFFFFF;outline:none;"></div>'+
+'<button type="button" onclick="rmVerify()" style="width:100%;background:#04081C;color:#ffffff;font-weight:600;font-size:13px;letter-spacing:1.8px;text-transform:uppercase;border:none;padding:16px;border-radius:4px;cursor:pointer;font-family:\'Poppins\',Arial,sans-serif;">Verificar y recibir temario</button>'+
+'<p id="rm-vmsg" style="font-size:11.5px;color:#AFC3E1;margin-top:10px;font-family:\'Lora\',Georgia,serif;"></p>'+
+'<p style="font-size:11.5px;color:#AFC3E1;margin-top:14px;font-family:\'Lora\',Georgia,serif;">No te llego? Revisa tu bandeja de no deseados o escribenos a <a href="mailto:growth@riskmathics.com" style="color:#FFFFFF;">growth@riskmathics.com</a></p>';
 c.style.display="block";var i=document.getElementById('rm-otp-email');if(i)i.focus();}
 async function rmVerify(){var ecode=(document.getElementById('rm-otp-email').value||"").trim();var m=document.getElementById('rm-vmsg');
 if(ecode.length<4){m.textContent="Escribe el codigo que te enviamos por correo.";return;}
