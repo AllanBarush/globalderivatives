@@ -2436,6 +2436,13 @@ rmPost(Object.assign({action:"start"},d)).catch(function(){return {};}).then(fun
 if(res&&res.need_corporate){rmCorporativo(res,box);return;}
 if(res&&res.ok){f.style.display="none";rmEspera(res,box);return;}
 alert((res&&res.error)||("No pudimos registrar tus datos. Escríbenos a "+rmMail()+" o por WhatsApp al +52 55 1901 5763"));});return false;}
+var d={nombre:fd.firstName||"",apellido:fd.lastName||"",puesto:fd.title||"",empresa:fd.company||"",email:fd.email||"",telefono:fd.phone||"",sector:fd.sector||"",tipo_interes:fd.interest||"",curso:RM_CFG.id,marca:RM_CFG.marca||"",folleto:RM_CFG.folleto||"",curso_nombre:rmPrograma(),url:location.href.split("#")[0],privacidad:true};RM_LEAD=d;
+var cont=document.getElementById('formContainer')||f.parentNode;var box=document.getElementById('rm-verify-top');if(!box){box=document.createElement('div');box.id='rm-verify-top';cont.appendChild(box);}box.style.display="block";
+var b=f.querySelector('button[type=submit]');var txt=b?b.textContent:"";if(b){b.textContent="ENVIANDO...";b.disabled=true;}
+rmPost(Object.assign({action:"start"},d)).catch(function(){return {};}).then(function(res){if(b){b.textContent=txt;b.disabled=false;}
+if(res&&res.need_corporate){rmCorporativo(res,box);return;}
+if(res&&res.ok){f.style.display="none";rmEspera(res,box);return;}
+alert((res&&res.error)||("No pudimos registrar tus datos. Escríbenos a "+rmMail()+" o por WhatsApp al +52 55 1901 5763"));});return false;}
 
 // Scroll animations
 const observer = new IntersectionObserver((entries) => {
@@ -2663,7 +2670,7 @@ h1,h2,h3,h4,h5,h6{color:#FFFFFF !important}
 <input name="telefono" placeholder="WhatsApp (opcional)" autocomplete="tel" style="width:100%;box-sizing:border-box;background:transparent;border:none;border-bottom:1px solid rgba(128,128,128,.55);padding:10px 2px;font-size:15px;color:inherit;font-family:'Lora',Georgia,serif;outline:none;">
 </div>
 <label style="display:flex;gap:10px;align-items:flex-start;font-family:'Lora',Georgia,serif;font-size:12.5px;line-height:1.5;opacity:.9;cursor:pointer;"><input type="checkbox" name="privacidad" required style="margin-top:3px;"> Acepto el <a href="https://riskmathics.com/aviso-de-privacidad" target="_blank" rel="noopener" style="color:inherit;">aviso de privacidad</a>.</label>
-<button type="submit" style="font-family:'Poppins',Arial,sans-serif;font-weight:600;font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;padding:16px;border-radius:4px;border:none;background:#25D366;color:#fff;cursor:pointer;">Agendar 20 minutos con desarrollo de negocio</button>
+<button type="submit" style="font-family:'Poppins',Arial,sans-serif;font-weight:600;font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;padding:16px;border-radius:4px;border:none;background:#25D366;color:#0b0715;cursor:pointer;min-height:44px;">Agendar 20 minutos con desarrollo de negocio</button>
 </form>
 <div id="rm-incompany-out" style="display:none;margin-top:18px;"></div>
 </div>
