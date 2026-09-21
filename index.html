@@ -1306,13 +1306,21 @@ section {
   #rm-enroll select option,#rm-enroll option{color:#111 !important;background-color:#fff !important}
 }
 </style>
+<style id="rm-css-marca">
+.header-brand{display:inline-flex;align-items:center;gap:9px;text-decoration:none;flex:none}
+.header-brand span{font-family:'Poppins',Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:.15em;
+ text-transform:uppercase;color:#fff;line-height:1.2;white-space:nowrap}
+.header-brand i{display:block;font-style:normal;font-size:8px;font-weight:500;letter-spacing:.2em;opacity:.6}
+.header-logo{height:30px;width:auto;display:block}
+@media(max-width:380px){.header-brand span{font-size:11px;letter-spacing:.1em}.header-brand i{display:none}}
+</style>
 </head>
 <body>
 
 <!-- ════════════ HEADER ════════════ -->
 <header class="site-header">
  <div class="header-inner">
- <img src="rm-logo.png" alt="RiskMathics" class="header-logo">
+ <a class="header-brand" href="https://riskmathics.com" aria-label="RiskMathics Financial Institute"><img src="rm-logo.png" alt="RiskMathics" class="header-logo"><span>RiskMathics<i>Financial Institute</i></span></a>
  <nav class="header-nav">
  <a href="#abstract">Abstract</a>
  <a href="#highlights">Highlights</a>
